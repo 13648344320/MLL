@@ -1,0 +1,56 @@
+#d1{
+    display: flex;
+    background: #10b6ed;
+    justify-content: center;
+}
+#d2{
+    height: 35px;
+    background: #f8f8f8;
+    font-size: 13px;
+    color: #717171;
+    display: flex;
+}
+.ul_1,.ul_2{
+    list-style: none;
+}
+.ul_1{
+    margin-left: 10%;
+    display:inline-flex;
+}
+.ul_2{
+    margin-right: 10%;
+    display: inline-flex;
+    margin-left: 30%;
+}
+.ul_1 li{
+    float: left;
+    line-height: 35px;
+}
+.ul_2 li{
+    float: right;
+    line-height: 35px;
+}
+.c_red{color: #e62318;}
+/*各种精灵图*/
+.sprite_1{
+    display: inline-block;
+    width: 16px;height: 24px;
+    background: url("../imgs/header/nav.png") 0px 38px;
+  
+}
+.sprite_down{
+    display: inline-block;
+    width: 7px;height: 5px;
+    background: url("../imgs/header/nav.png") -1px 0px;
+}
+.sprite_shop_car{
+    display: inline-block;
+    width: 17px;height: 15px;
+    background: url("../imgs/header/nav.png")0px 15px;
+}
+.sprite_scan{
+    display: inline-block;
+    width: 16px;height: 15px;
+    background: url("../imgs/header/nav.png")2px -9px;
+    background-repeat: no-repeat;
+}

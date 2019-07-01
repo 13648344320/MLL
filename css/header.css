@@ -1,0 +1,155 @@
+
+/*顶上的活动图*/
+.img_1{
+    width: 100%;height: 50px;
+    background: #10b6ed;
+}
+/*活动图*/
+.img_1 img{
+    vertical-align: top;
+    margin-left: 108px;
+}
+/*解决高度坍塌*/
+.parent::after{
+    content: "";
+    display: block;
+    height: 30px;
+}
+/*放着两个ul的div*/
+div.parent{
+    background:#dfdfdf;
+}
+/*第一个ul*/
+.ul_1{
+    margin-left: 100px;
+   
+}
+.ul_1 li,.ul_2 li{
+    float: left;
+     list-style: none;
+}
+.ul_2 li{
+    float: right;
+}
+/*重庆站旁边的精灵图*/
+.ul_1 li .sprite_1{ 
+    display: inline-block;
+    width: 14px;height: 14px;
+    background:url("../imgs/header/nav.png") 2px 29px;
+}
+/*重庆站*/
+.c_red{
+    color: #e62318 !important;
+}
+/*向下的箭头*/
+.sprite_down{
+    display: inline-block;
+    width: 8px;height: 4px;
+    background: url(../imgs/header/nav.png) 0px 0px;
+}
+/*购物车*/
+.sprite_shop_car{
+    display: inline-block;
+    width: 17px;height: 15px;
+    background: url(../imgs/header/nav.png) 0px 15px;
+}
+/*关注美乐乐前边的扫一扫图标*/
+.sprite_scan{
+    display:inline-block;
+    width: 12px;height: 13px;
+    background: url(../imgs/header/nav.png) 0px -10px;
+}
+/*logo图标定位*/
+.logo_parent{
+    position: relative;
+}
+.logo{
+    margin-top:23px;
+}
+.a_img{
+    display:inline-block;
+    padding-top:5px;
+}
+.ssk{
+    
+    position: absolute;
+    left: 20%;top:10px;
+}
+.ssk input{
+    width: 574px;height: 38px;
+    border-radius: 0.25rem;
+    border:0 none;
+    background: #e5e5e5;
+    color: #333;
+    font-size: 14px;
+    position: relative;
+    outline: none;
+    box-sizing: border-box;
+    padding:0 49px 0 16px;
+}
+/*input后面的放大镜*/
+#dd{
+    display: inline-block;
+    width: 34px;height: 30px;
+    background-color: #e5e5e5;
+    position: relative;
+    top:-4px;
+    margin:0 0 -15px -41px;
+    border-radius: 0.25rem;
+    
+}
+.sprite_search{
+    display: inline-block;
+    width:23px;height: 22px; 
+    background: url("../imgs/header/index.png") 91px -251px ;
+    position: absolute;
+    top:3px;
+   
+}
+/*input下面的小字*/
+.a8{
+    position: absolute;
+    left:270px;top:56px;
+    
+}
+/*给8个a标签准备的一些字体样式*/
+.text-none{
+    text-decoration:none;
+}
+.fz-14{
+    font-size: 14px;
+}
+.c_999{
+    color:#999;
+}
+.c_f60{
+    color: #ff6600;
+}
+/*抢百元红包图片*/
+#_d{
+    display: inline-block;
+    width: 240px;
+    position: absolute;
+    right: 0px;top: 0px;
+}
+.parent3{
+    margin-top: 25px;
+}
+.parent3 h2{
+    display: inline-block;
+    width: 200px;height: 36px;
+    color: #fff;
+    font-size: 16px;
+    background: #e62318;
+    text-align: center;
+    line-height: 36px;
+}
+.after_ul{
+    display: inline-block;
+}
+.after_ul li{
+    display: inline-block;
+    font-size: 16px;
+    list-style: none;
+    padding: 0 15px;
+}
