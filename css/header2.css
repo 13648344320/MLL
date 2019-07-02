@@ -14,7 +14,7 @@
     list-style: none;
 }
 .ul_1{
-    margin-left: 10%;
+    margin-left: 11%;
     display:inline-flex;
 }
 .ul_2{
@@ -48,9 +48,27 @@
     width: 17px;height: 15px;
     background: url("../imgs/header/nav.png")0px 15px;
 }
+.scan_parent{
+    display: inline-block;
+    height: 33px;
+    box-sizing: border-box;
+    vertical-align: bottom;
+}
 .sprite_scan{
     display: inline-block;
     width: 16px;height: 15px;
     background: url("../imgs/header/nav.png")2px -9px;
     background-repeat: no-repeat;
+    
+}
+/*两个大logo和一个input*/
+.parent_logo{
+    display: flex;
+    justify-content: space-between;
+    
+    margin:4% 11% 0;
+}
+/* logo1的位置 */
+.logo1{
+    
 }
