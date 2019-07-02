@@ -68,7 +68,17 @@
     
     margin:4% 11% 0;
 }
-/* logo1的位置 */
-.logo1{
-    
+/*input的样式*/
+#d_input_a input{
+    width: 500px;height: 38px;
+    padding: 9px 16px;
+    box-sizing: border-box;
+}
+#d_input_a a div{
+    display: inline-block;
+    width:20px;height: 20px;
+    background: url("../imgs/header/index.png") 0px 0px;
+}
+.d_a8 a{
+    color: #999;
 }
