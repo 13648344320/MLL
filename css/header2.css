@@ -58,7 +58,6 @@
     display: inline-block;
     width: 16px;height: 15px;
     background: url("../imgs/header/nav.png")2px -9px;
-    background-repeat: no-repeat;
     
 }
 /*两个大logo和一个input*/
@@ -70,14 +69,19 @@
 }
 /*input的样式*/
 #d_input_a input{
-    width: 500px;height: 38px;
+    width: 576px;height: 38px;
     padding: 9px 16px;
     box-sizing: border-box;
+    border:none;
+    outline: 0;
+    background: #f0f0f0;
 }
-#d_input_a a div{
+/*兄弟选择器，匹配input后的第一个a标签*/
+input+a{
     display: inline-block;
-    width:20px;height: 20px;
-    background: url("../imgs/header/index.png") 0px 0px;
+    width:29px;height: 22px;
+    background: url("../imgs/header/index.png") -58px 565px;
+    margin: 0 0 -7px -46px ;
 }
 .d_a8 a{
     color: #999;
