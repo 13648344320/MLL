@@ -3,6 +3,7 @@
     background: #10b6ed;
     justify-content: center;
 }
+
 #d2{
     height: 35px;
     background: #f8f8f8;
@@ -10,33 +11,45 @@
     color: #717171;
     display: flex;
 }
+/*登录注册*/
 .ul_1,.ul_2{
     list-style: none;
 }
 .ul_1{
-    margin-left: 11%;
+    margin-left: 360px;
     display:inline-flex;
 }
 .ul_2{
-    margin-right: 10%;
     display: inline-flex;
-    margin-left: 30%;
+    margin:0 360px 0 200px;
+}
+.m-0{
+    margin:0 !important;
+}
+.p-0{
+    padding: 0 !important;
 }
 .ul_1 li{
+    display: inline-block;
     float: left;
     line-height: 35px;
+    margin: 0 0 0 12px;;
+}
+/*定位图样的精灵图*/
+.ul_1 li:first-child{
+    padding-top:2px;
 }
 .ul_2 li{
     float: right;
     line-height: 35px;
+    margin: 0 0 0 20px;
 }
-.c_red{color: #e62318;}
+.c_red{color: #e62318 !important;}
 /*各种精灵图*/
 .sprite_1{
     display: inline-block;
     width: 16px;height: 24px;
     background: url("../imgs/header/nav.png") 0px 38px;
-  
 }
 .sprite_down{
     display: inline-block;
@@ -65,16 +78,28 @@
     display: flex;
     justify-content: space-between;
     
-    margin:4% 11% 0;
+    margin:0px 360px 0;
+}
+.logo1{
+    padding-top:24px;
+}
+#logo2 img{
+    margin:12px 10px 0 0;
+}
+#d_input_a{
+    padding-top: 24px;
+    margin-left: 50px;
 }
 /*input的样式*/
 #d_input_a input{
-    width: 576px;height: 38px;
+    width: 580px;height: 38px;
     padding: 9px 16px;
     box-sizing: border-box;
     border:none;
     outline: 0;
     background: #f0f0f0;
+    color: #333;
+    border-radius: 0.25rem;
 }
 /*兄弟选择器，匹配input后的第一个a标签*/
 input+a{
@@ -83,6 +108,36 @@ input+a{
     background: url("../imgs/header/index.png") -58px 565px;
     margin: 0 0 -7px -46px ;
 }
+.d_a8{
+    margin: 3px 0 0 0;
+}
 .d_a8 a{
     color: #999;
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 6px;
+}
+.f60{
+    color: #f60 !important;
+}
+.d_a11{
+    margin:-12px 0 0 350px;
+}
+.d_a11 a{
+    display: inline-block;
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+    line-height: 36px;
+    
+}
+.a11_1{
+    width: 200px;height: 36px;
+    color: #fff !important;
+    font-size: 15px;
+    background: #e62318;
+    text-align: center;
+}
+.d_a11 a:not(.a11_1){
+    padding: 0 12px;
 }
