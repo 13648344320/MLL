@@ -1,7 +1,10 @@
-#d1{
-    display: flex;
+#d1_parent{
     background: #10b6ed;
-    justify-content: center;
+}
+
+#d1{
+    width: 980px;
+    margin: 0 auto;
 }
 
 #d2{
@@ -10,17 +13,20 @@
     font-size: 13px;
     color: #717171;
     margin: 0 auto;
+    display:flex;
+    justify-content: space-between;
 }
 /*登录注册*/
 .ul_1,.ul_2{
     list-style: none;
+    display: inline-flex;
 }
 .ul_1{
     
-    display:inline-flex;
+    
 }
 .ul_2{
-    display: inline-flex;
+    
     
 }
 .m-0{
