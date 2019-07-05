@@ -1,0 +1,9 @@
+/*精灵图*/
+.sprite-parent{
+    display: flex;
+    justify-content: center;
+}
+.sprite-parent div a{
+    display: inline-block;
+    
+}
