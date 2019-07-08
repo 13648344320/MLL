@@ -1,155 +1,153 @@
-
-/*顶上的活动图*/
-.img_1{
-    width: 100%;height: 50px;
+#d1_parent{
     background: #10b6ed;
 }
-/*活动图*/
-.img_1 img{
-    vertical-align: top;
-    margin-left: 108px;
+
+#d1{
+    width: 980px;
+    margin: 0 auto;
 }
-/*解决高度坍塌*/
-.parent::after{
-    content: "";
-    display: block;
-    height: 30px;
+
+#d2{
+    width:1200px;height: 35px;
+    background: #f8f8f8;
+    font-size: 13px;
+    color: #717171;
+    margin: 0 auto;
+    display:flex;
+    justify-content: space-between;
 }
-/*放着两个ul的div*/
-div.parent{
-    background:#dfdfdf;
+/*登录注册*/
+.ul_1,.ul_2{
+    list-style: none;
+    display: inline-flex;
 }
-/*第一个ul*/
 .ul_1{
-    margin-left: 100px;
-   
+    
+    
 }
-.ul_1 li,.ul_2 li{
+.ul_2{
+    
+    
+}
+.m-0{
+    margin:0 !important;
+}
+.p-0{
+    padding: 0 !important;
+}
+.ul_1 li{
+    display: inline-block;
     float: left;
-     list-style: none;
+    line-height: 35px;
+    margin: 0 0 0 12px;;
+}
+/*定位图样的精灵图*/
+.ul_1 li:first-child{
+    padding-top:2px;
 }
 .ul_2 li{
     float: right;
+    line-height: 35px;
+    margin: 0 0 0 20px;
 }
-/*重庆站旁边的精灵图*/
-.ul_1 li .sprite_1{ 
+.c_red{color: #e62318 !important;}
+/*各种精灵图*/
+.sprite_1{
     display: inline-block;
-    width: 14px;height: 14px;
-    background:url("../imgs/header/nav.png") 2px 29px;
+    width: 16px;height: 24px;
+    background: url("../imgs/header/nav.png") 0px 38px;
 }
-/*重庆站*/
-.c_red{
-    color: #e62318 !important;
-}
-/*向下的箭头*/
 .sprite_down{
     display: inline-block;
-    width: 8px;height: 4px;
-    background: url(../imgs/header/nav.png) 0px 0px;
+    width: 7px;height: 5px;
+    background: url("../imgs/header/nav.png") -1px 0px;
 }
-/*购物车*/
 .sprite_shop_car{
     display: inline-block;
     width: 17px;height: 15px;
-    background: url(../imgs/header/nav.png) 0px 15px;
+    background: url("../imgs/header/nav.png")0px 15px;
 }
-/*关注美乐乐前边的扫一扫图标*/
-.sprite_scan{
-    display:inline-block;
-    width: 12px;height: 13px;
-    background: url(../imgs/header/nav.png) 0px -10px;
-}
-/*logo图标定位*/
-.logo_parent{
-    position: relative;
-}
-.logo{
-    margin-top:23px;
-}
-.a_img{
-    display:inline-block;
-    padding-top:5px;
-}
-.ssk{
-    
-    position: absolute;
-    left: 20%;top:10px;
-}
-.ssk input{
-    width: 574px;height: 38px;
-    border-radius: 0.25rem;
-    border:0 none;
-    background: #e5e5e5;
-    color: #333;
-    font-size: 14px;
-    position: relative;
-    outline: none;
+.scan_parent{
+    display: inline-block;
+    height: 33px;
     box-sizing: border-box;
-    padding:0 49px 0 16px;
+    vertical-align: bottom;
 }
-/*input后面的放大镜*/
-#dd{
+.sprite_scan{
     display: inline-block;
-    width: 34px;height: 30px;
-    background-color: #e5e5e5;
-    position: relative;
-    top:-4px;
-    margin:0 0 -15px -41px;
+    width: 16px;height: 15px;
+    background: url("../imgs/header/nav.png")2px -9px;
+    
+}
+/*两个大logo和一个input*/
+.parent_logo_parent{
+    display: flex;
+    justify-content: center;
+}
+.parent_logo{
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+}
+.logo1{
+    padding-top:24px;
+}
+#logo2 img{
+    margin:12px 10px 0 0;
+}
+#d_input_a{
+    padding-top: 24px;
+    margin-left: 50px;
+}
+/*input的样式*/
+#d_input_a input{
+    width: 580px;height: 38px;
+    padding: 9px 16px;
+    box-sizing: border-box;
+    border:none;
+    outline: 0;
+    background: #f0f0f0;
+    color: #333;
     border-radius: 0.25rem;
-    
 }
-.sprite_search{
+/*兄弟选择器，匹配input后的第一个a标签*/
+input+a{
     display: inline-block;
-    width:23px;height: 22px; 
-    background: url("../imgs/header/index.png") 91px -251px ;
-    position: absolute;
-    top:3px;
-   
+    width:29px;height: 22px;
+    background: url("../imgs/header/index.png") -58px 565px;
+    margin: 0 0 -7px -46px ;
 }
-/*input下面的小字*/
-.a8{
-    position: absolute;
-    left:270px;top:56px;
-    
+.d_a8{
+    margin: 3px 0 0 0;
 }
-/*给8个a标签准备的一些字体样式*/
-.text-none{
-    text-decoration:none;
-}
-.fz-14{
+.d_a8 a{
+    color: #999;
+    text-decoration: none;
     font-size: 14px;
+    margin-right: 6px;
 }
-.c_999{
-    color:#999;
+.f60{
+    color: #f60 !important;
 }
-.c_f60{
-    color: #ff6600;
+.d_a11{
+    width: 1200px;
+    margin:0 auto;
 }
-/*抢百元红包图片*/
-#_d{
+.d_a11 a{
     display: inline-block;
-    width: 240px;
-    position: absolute;
-    right: 0px;top: 0px;
-}
-.parent3{
-    margin-top: 25px;
-}
-.parent3 h2{
-    display: inline-block;
-    width: 200px;height: 36px;
-    color: #fff;
     font-size: 16px;
+    color: #333;
+    text-decoration: none;
+    line-height: 36px;
+    
+}
+.a11_1{
+    width: 200px;height: 36px;
+    color: #fff !important;
+    font-size: 15px;
     background: #e62318;
     text-align: center;
-    line-height: 36px;
 }
-.after_ul{
-    display: inline-block;
-}
-.after_ul li{
-    display: inline-block;
-    font-size: 16px;
-    list-style: none;
-    padding: 0 15px;
+.d_a11 a:not(.a11_1){
+    padding: 0 12px;
 }

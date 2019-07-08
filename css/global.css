@@ -1,13 +1,10 @@
 @charset "UTF-8";
-/*css reset*/
-* {
-  margin: 0;
-  padding: 0; }
-body {
-  width:1300px;
-  margin:auto;
-  color: #666;
-  font-family: 黑体;
-  font-size:0.8rem;
-  box-shadow: 0 -21px 8px 0px;
+
+*{margin:0;padding: 0;}
+
+body{
+    width: 100%;
+    min-width:1200px;
+    font-family: 微软雅黑;
+    font-size:0.8rem;
 }
