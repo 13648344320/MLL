@@ -51,3 +51,28 @@
 .spa-d8{
     background: url("../imgs/foot/footerIcon.png") -150px -50px;
 }
+/*footer-help*/
+.footer-help{
+    padding:35px 0 54px;
+}
+/*第二个div*/
+.footer-help-child{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+#d1 ul{
+    list-style: none;
+}
+#d2 a{
+    display: block;
+    text-decoration: none;
+    color: #999;
+    font-size: 12px;
+    margin: 9px 0 0;
+}
+ 
+#d1,#d2,.d2-child{
+    display: inline-block
+}
