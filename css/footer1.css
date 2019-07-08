@@ -2,8 +2,52 @@
 .sprite-parent{
     display: flex;
     justify-content: center;
+    box-sizing: border-box;
+    height: 152px;
+    padding: 36px 0;
+    border-bottom: 1px solid #ededed;
 }
-.sprite-parent div a{
+.sprite-parent a{
     display: inline-block;
-    
+    width:150px;height: 80px;
+    box-sizing: border-box;
+}
+/*8个精灵图*/
+.sprite-parent a div{
+    width: 50px;height: 50px;
+    margin: 0 auto;
+}
+.sprite-parent a{
+    text-align: center;
+    color: #000;
+    font-size:14px;
+    text-decoration: none; 
+}
+.sprite-parent a span{
+    display: block;
+    margin: 10px 0 0;
+}
+.spa-d1{
+    background: url("../imgs/foot/footerIcon.png") 0px 0px;
+}
+.spa-d2{
+    background: url("../imgs/foot/footerIcon.png") -50px 0px;
+}
+.spa-d3{
+    background: url("../imgs/foot/footerIcon.png") -100px 0px;
+}
+.spa-d4{
+    background: url("../imgs/foot/footerIcon.png") -150px 0px;
+}
+.spa-d5{
+    background: url("../imgs/foot/footerIcon.png") -0px -50px;
+}
+.spa-d6{
+    background: url("../imgs/foot/footerIcon.png") -50px -50px;
+}
+.spa-d7{
+    background: url("../imgs/foot/footerIcon.png") -100px -50px;
+}
+.spa-d8{
+    background: url("../imgs/foot/footerIcon.png") -150px -50px;
 }
