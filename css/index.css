@@ -1,0 +1,119 @@
+/*字体、颜色等公共样式*/
+.c-333{
+    color: #333;
+}
+.c-666{
+    color: #666;
+}
+/* 鼠标移入字体变红 */
+/*以下是目前使用此hover的选择器位置*/
+/*1.新品首发下的更多新品 2.*/
+div.new-product>a:nth-child(2):hover{
+    color: #e62318;
+}
+
+
+div.carousel{
+    background: #f1b778;
+}
+.carousel .carousel-child{
+    width: 1200px;
+    margin: 0 auto;
+}
+/* 4.1 */
+div.list-1{
+    width: 1200px;
+    margin: 30px auto 0;
+    display: flex;
+    justify-content: space-between;
+}
+.list-1>div{
+    display: inline-block;
+    position: relative;
+}
+.list-1>div:nth-child(1){
+    width: 393px;height: 300px;
+    overflow: hidden;
+}
+.list-1>div:not(:nth-child(1)){
+    width: 259px;height: 300px;
+    overflow: hidden;
+}
+.list-1>div>img{
+    transition:all 0.3s linear;
+}
+.list-1>div>img:hover{
+    transform: scale(1.06);
+}
+/* 团购 */
+.group{
+    box-sizing: border-box;
+    width: 220px;height: 110px;
+    padding: 10px;
+    margin: 0 auto;
+    position: absolute;
+    top:32px;left:87px;
+    background: #fff;
+    z-index: 1;
+}
+.group>.group-son{
+    box-sizing: border-box;
+    width: 200px;height: 90px;
+    border: 1px solid #ececec;
+    padding: 0 22px;
+    text-align: center;
+}
+/* 两个p标签 */
+.group>.group-son>p:nth-child(1){
+    padding: 16px 0 5px;
+    color: #333;
+    font-size: 22px;
+    border-bottom: 1px dashed #dfd3e9;
+}
+.group>.group-son>p:nth-child(2){
+    padding: 5px 0 12px;
+}
+.list-1>div>.group-3{
+    position: absolute;
+    z-index: 1;
+    top:30px;left: 60px;
+    text-align: center;
+}
+.list-1>div>.group-3>p:nth-child(1){
+    color: #333;
+    font-size: 22px;
+    padding: 18px 0 4px;
+    margin: 0 0 3px;
+}
+/*四个第二个p标签的字体样式合到一处写*/
+.group>.group-son>p:nth-child(2),.list-1>div>.group-3>p:nth-child(2){
+    color: #666;
+    font-size: 15px;
+}
+/*新品首发*/
+div.new-product{
+    box-sizing: border-box;
+    width: 1200px;height: 96px;
+    margin: 0 auto;
+    padding: 45px 0 17px;
+    display: flex;
+    justify-content: space-between;
+}
+div.new-product>a:nth-child(1){
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+div.new-product>a:nth-child(2){
+    font-size: 14px;
+    text-decoration: none;
+    margin:12px 0 0;
+}
+/*精灵图*/
+div.new-product>a:nth-child(2)>i{
+    display: inline-block;
+    width: 15px;height: 17px;
+    background: url("../imgs/header/index.png")-136px 212px;
+    vertical-align: bottom;
+}
