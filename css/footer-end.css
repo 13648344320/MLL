@@ -13,11 +13,43 @@ a:hover{
     background: #1f1f1f;
 }
 .child{
-    width: 1200px;
+    width: 1200px;height: 100%;
     display: flex;
     justify-content:space-between;
-    margin: 0 auto; 
+    margin: 24px auto 0;
 }
-.child-1,.child-2{
+.child-1,.child-2,.child-2>a{
     display: inline-block;
 }
+.child-2{
+    padding: 10px 0 0;
+}
+.child-2 span{
+    display: inline-block;
+    width: 48px;
+    vertical-align: middle;
+}
+/*精灵图*/
+a.c-2-a1{
+    width: 27px;height: 22px;
+    background: url("../imgs/foot/credit.png") 0px 0px;
+    margin:0 0 -11px;
+}
+a.c-2-a2{
+    width: 33px;height: 27px;
+    background: url("../imgs/foot/credit.png") 0px 27px;
+    margin:0 0 -11px;
+}
+a.c-2-a3{
+    width: 24px;height: 23px;
+    background: url("../imgs/foot/credit.png") 0px 49px;
+    margin:0 0 -11px;
+}
+a.c-2-a4{
+    width: 27px;height: 23px;
+    background: url("../imgs/foot/credit.png") 0px -24px;
+    margin:0 0 -11px;
+}
+
+
+
