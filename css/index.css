@@ -5,13 +5,27 @@
 .c-666{
     color: #666;
 }
+.c-e62318{
+    color: #e62318;
+}
+/*所有的a标签都去掉下划线*/
+a{
+    text-decoration: none;
+}
+
 /* 鼠标移入字体变红 */
 /*以下是目前使用此hover的选择器位置*/
-/*1.新品首发下的更多新品 2.*/
+/*1.新品首发下的更多新品 2.待定*/
 div.new-product>a:nth-child(2):hover{
     color: #e62318;
 }
 
+/* 华 */
+/* 丽 */
+/* 的 */
+/* 分 */
+/* 割 */
+/* 线 */
 
 div.carousel{
     background: #f1b778;
@@ -63,14 +77,16 @@ div.list-1{
     padding: 0 22px;
     text-align: center;
 }
-/* 两个p标签 */
-.group>.group-son>p:nth-child(1){
+/* 第一张图片上的两个a标签 */
+.group>.group-son>a:nth-child(1){
+    display: block;
     padding: 16px 0 5px;
     color: #333;
     font-size: 22px;
     border-bottom: 1px dashed #dfd3e9;
 }
-.group>.group-son>p:nth-child(2){
+.group>.group-son>a:nth-child(2){
+    display: block;
     padding: 5px 0 12px;
 }
 .list-1>div>.group-3{
@@ -79,14 +95,15 @@ div.list-1{
     top:30px;left: 60px;
     text-align: center;
 }
-.list-1>div>.group-3>p:nth-child(1){
+.list-1>div>.group-3>a:nth-child(1){
+    display: block;
     color: #333;
     font-size: 22px;
     padding: 18px 0 4px;
     margin: 0 0 3px;
 }
-/*四个第二个p标签的字体样式合到一处写*/
-.group>.group-son>p:nth-child(2),.list-1>div>.group-3>p:nth-child(2){
+/*四个第二个a标签的字体样式合到一处写*/
+.group>.group-son>a:nth-child(2),.list-1>div>.group-3>a:nth-child(2){
     color: #666;
     font-size: 15px;
 }
@@ -116,4 +133,47 @@ div.new-product>a:nth-child(2)>i{
     width: 15px;height: 17px;
     background: url("../imgs/header/index.png")-136px 212px;
     vertical-align: bottom;
+}
+
+
+/* 3.2 */
+/* 公共样式 */
+.parent-3-2{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+/*以下代码后期可合并*/
+.parent-3-2>div{
+    width: 393px;height: 393px;
+    overflow: hidden;
+    position: relative;
+}
+.parent-3-2>div>img{
+    transition:all 0.3s linear;
+}
+.parent-3-2>div>img:hover{
+    transform: scale(1.06);
+}
+/*以上代码后期可合并*/
+
+.parent-3-2>div>div{
+    width: 100%;
+    position: absolute;
+    bottom: 38px;
+    text-align: center;
+}
+.parent-3-2>div>div>a:nth-child(1){
+    display: block;
+    width: 240px;
+    font-size: 24px;
+    margin: 0 auto 8px;
+    padding: 0 0 8px;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+.parent-3-2>div>div>a:nth-child(2){
+    font-size: 14px;
+    color: #fff;
 }
