@@ -156,8 +156,8 @@ div.new-product>a:nth-child(2)>i{
 .parent-3-2>div>img:hover{
     transform: scale(1.06);
 }
-/*以上代码后期可合并*/
-
+/*以 上 代码后期可合并*/
+/*图片上的字*/
 .parent-3-2>div>div{
     width: 100%;
     position: absolute;
@@ -177,3 +177,74 @@ div.new-product>a:nth-child(2)>i{
     font-size: 14px;
     color: #fff;
 }
+/* 人气推荐   热销套系 */
+div.recommend{
+    width: 1200px;height: 94px;
+    margin: 0 auto;
+    padding: 45px 0 17px;
+    box-sizing: border-box;
+    color: #333;
+}
+div.recommend>span{
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* recommend.3 */
+div.recommend-3{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+/*第一张图的样式*/
+div.recommend-3>div:nth-child(1){
+    width: 270px;height: 450px;
+    overflow: hidden;
+    position: relative;
+}
+/*4张图片放大效果，后期可合并*/
+div.recommend-3>div:nth-child(1) img,
+div.recommend-3>div:nth-child(2) img{
+    transition:all 0.3s linear;
+}
+div.recommend-3>div:nth-child(1) img:hover,
+div.recommend-3>div:nth-child(2) img:hover{
+    transform: scale(1.06);
+}
+div.rec-3-3p{
+    width:100%;height: 69px;
+    position: absolute;
+    top: 0px;
+    text-align: center;
+}
+
+/*第二张图的样式*/
+div.recommend-3>div:nth-child(2){
+    width: 520px;height: 450px;
+    overflow: hidden;
+    position: relative;
+}
+/*图片的放大效果放到上面去了*/
+
+/*第二张图中div的样式*/
+div.rec-3-2p{
+    width:260px;height: 110px;
+    margin: 0 auto 0;
+    position: absolute;
+    bottom: 0px;left:0px;
+    text-align: center;
+    background: rgba(255,255,255,.3);
+}
+
+/*第三个div的样式*/
+div.recommend-3>div:nth-child(3){
+    width: 390px;height: 450px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+
+
