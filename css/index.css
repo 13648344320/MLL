@@ -20,6 +20,13 @@ div.new-product>a:nth-child(2):hover{
     color: #e62318;
 }
 
+/*页面内所有商品块鼠标移入时的阴影和位移效果*/
+.list-1>div:hover,
+.parent-3-2>div:hover{
+    box-shadow: 0 5px 6px #aaa;
+    transform: translate(0px 10px);
+}
+
 /* 华 */
 /* 丽 */
 /* 的 */
@@ -53,12 +60,14 @@ div.list-1{
     width: 259px;height: 300px;
     overflow: hidden;
 }
+/*后期可合并*/
 .list-1>div>img{
-    transition:all 0.3s linear;
+    transition:all 0.3s ease-out;
 }
-.list-1>div>img:hover{
+.list-1>div:hover>img{
     transform: scale(1.06);
 }
+
 /* 团购 */
 .group{
     box-sizing: border-box;
@@ -153,7 +162,7 @@ div.new-product>a:nth-child(2)>i{
 .parent-3-2>div>img{
     transition:all 0.3s linear;
 }
-.parent-3-2>div>img:hover{
+.parent-3-2>div:hover>img{
     transform: scale(1.06);
 }
 /*以 上 代码后期可合并*/
@@ -206,11 +215,13 @@ div.recommend-3>div:nth-child(1){
 }
 /*4张图片放大效果，后期可合并*/
 div.recommend-3>div:nth-child(1) img,
-div.recommend-3>div:nth-child(2) img{
+div.recommend-3>div:nth-child(2) img,
+div.recommend-3>div:nth-child(3) img{
     transition:all 0.3s linear;
 }
-div.recommend-3>div:nth-child(1) img:hover,
-div.recommend-3>div:nth-child(2) img:hover{
+div.recommend-3>div:nth-child(1):hover img,
+div.recommend-3>div:nth-child(2):hover img,
+div.recommend-3>div:nth-child(3):hover img{
     transform: scale(1.06);
 }
 div.rec-3-3p{
@@ -226,7 +237,7 @@ div.recommend-3>div:nth-child(2){
     overflow: hidden;
     position: relative;
 }
-/*图片的放大效果放到上面去了*/
+/*图片的放大效果放到216行去了*/
 
 /*第二张图中div的样式*/
 div.rec-3-2p{
@@ -239,11 +250,34 @@ div.rec-3-2p{
 }
 
 /*第三个div的样式*/
-div.recommend-3>div:nth-child(3){
+div.recommend-3>.right-div{
     width: 390px;height: 450px;
     display: flex;
     flex-flow: column;
     justify-content: space-between;
+}
+/*右边两张图同时设置*/
+/*两个a标签*/
+div.right-div>a{
+    display: block;
+    width: 390px;height: 220px;
+    overflow: hidden;
+    position: relative;
+}
+/*里面的文字*/
+div.right-div>a>div{
+    width: 390px;height: 69px;
+    margin: 0 0 0 30px;
+    box-sizing: border-box;
+    position: absolute;
+    top:32px;
+}
+div.right-div>a>div>p:nth-child(1){
+    font-size: 20px;
+}
+div.right-div>a>div>p:not(:nth-child(1)){
+    font-size: 14px;
+    margin: 3px 0 0;
 }
 
 
