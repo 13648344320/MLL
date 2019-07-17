@@ -8,6 +8,16 @@
 .c-e62318{
     color: #e62318;
 }
+/*背景颜色系列*/
+.bg-eee{
+    background: #eee;
+}
+.fz-20{
+    font-size: 20px;
+}
+.fz-14{
+    font-size: 14px;
+}
 /*所有的a标签都去掉下划线*/
 a{
     text-decoration: none;
@@ -187,14 +197,14 @@ div.new-product>a:nth-child(2)>i{
     color: #fff;
 }
 /* 人气推荐   热销套系 */
-div.recommend{
+div.recommend,div.hot{
     width: 1200px;height: 94px;
     margin: 0 auto;
     padding: 45px 0 17px;
     box-sizing: border-box;
     color: #333;
 }
-div.recommend>span{
+div.recommend>span,div.hot>span{
     display: block;
     font-size: 24px;
     font-weight: bold;
@@ -213,22 +223,16 @@ div.recommend-3>div:nth-child(1){
     overflow: hidden;
     position: relative;
 }
-/*4张图片放大效果，后期可合并*/
-div.recommend-3>div:nth-child(1) img,
-div.recommend-3>div:nth-child(2) img,
-div.recommend-3>div:nth-child(3) img{
-    transition:all 0.3s linear;
-}
-div.recommend-3>div:nth-child(1):hover img,
-div.recommend-3>div:nth-child(2):hover img,
-div.recommend-3>div:nth-child(3):hover img{
-    transform: scale(1.06);
-}
+/*文字*/
 div.rec-3-3p{
-    width:100%;height: 69px;
+    height: 69px;
     position: absolute;
-    top: 0px;
-    text-align: center;
+    top: 45px;
+    margin: 0 0 0 45px;
+    box-sizing: border-box;
+}
+div.rec-3-3p>p:nth-child(2){
+    margin: 4px 0 3px 0;
 }
 
 /*第二张图的样式*/
@@ -237,17 +241,25 @@ div.recommend-3>div:nth-child(2){
     overflow: hidden;
     position: relative;
 }
-/*图片的放大效果放到216行去了*/
 
 /*第二张图中div的样式*/
 div.rec-3-2p{
-    width:260px;height: 110px;
-    margin: 0 auto 0;
+    width:260px;height: 100px;
     position: absolute;
-    bottom: 0px;left:0px;
+    bottom: 40px;left: 130px;
     text-align: center;
-    background: rgba(255,255,255,.3);
+    background: rgba(255,255,255,.8);
+    padding: 22px 27px 0;
+    box-sizing: border-box;
 }
+div.rec-3-2p>p:nth-child(1){
+    margin: 0 0 6px; 
+}
+div.rec-3-2p>p:nth-child(2){
+    border-top:1px dotted #333;
+    padding: 7px 0 0;
+}
+
 
 /*第三个div的样式*/
 div.recommend-3>.right-div{
@@ -280,5 +292,84 @@ div.right-div>a>div>p:not(:nth-child(1)){
     margin: 3px 0 0;
 }
 
+/*四张图片放大效果，后期可合并*/
+div.recommend-3>div:nth-child(1) img,
+div.recommend-3>div:nth-child(2) img,
+.right-div>a>img{
+    transition:all 0.3s linear;
+}
+div.recommend-3>div:nth-child(1):hover img,
+div.recommend-3>div:nth-child(2):hover img,
+.right-div>a:hover img{
+    transform: scale(1.06);
+}
+/* 热销套系的文字和人气推荐的文字写在一起 */
 
 
+/*热销套系的图片*/
+/*三张图片同时写*/
+/* 最外层div */
+div.hot-parent{
+    width: 1200px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+/* 包裹a标签的div */
+.hot-parent>div{
+    width:390px;height: 507px;
+    box-sizing: border-box;
+}
+/* 包裹img的a标签 */
+.hot-parent>div>a{
+    display: block;
+    width: 390px;height: 278px;
+    overflow: hidden;
+}
+/*a标签里的img*/
+.hot-parent>div>a>img{
+    transition:all 0.3s linear;
+}
+.hot-parent>div>a:hover>img{
+    transform: scale(1.06);
+}
+
+/* 下半部分文字部分 */
+/* 外层div */
+.hot-parent>div>div{
+    box-sizing: border-box;
+    padding: 20px;
+    position: relative;
+    background: #eee;
+}
+/* 图标div */
+.hot-parent>div>a+div>div{
+    width: 0px;height: 0px;
+    border:12px solid #eee;
+    border-left-color:transparent;
+    border-right-color:transparent;
+    border-top-color:transparent;
+    position: absolute;
+    top:-24px;left:31px;
+}
+.hot-parent>div>a+div>div+a{
+    font-size: 18px;
+    color: #333;
+    margin: 6px 0 5px;
+}
+/*重温经典时光，深情动人，让生活更有质感*/
+.hot-parent>div>a+div>a+p>a:nth-child(1){
+    display: inline-block;
+    height: 20px;
+    font-size: 14px;
+    color: #999;
+    margin: 0 0 0;
+}
+.hot-parent>div>a+div>a+p>a:nth-child(2){
+    display: inline-block;
+    height: 20px;
+    font-size: 14px;
+    color: #e62318;
+    transform: translateY(-2px);
+    margin: 0 0 0 10px;
+}
