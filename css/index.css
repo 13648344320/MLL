@@ -25,10 +25,13 @@ a{
 
 /* 鼠标移入字体变红 */
 /*以下是目前使用此hover的选择器位置*/
-/*1.新品首发下的更多新品 2.待定*/
-div.new-product>a:nth-child(2):hover{
+/*1.新品首发下的更多新品*/
+div.new-product>a:nth-child(2):hover,
+/*热销套系中间的字*/
+.hot-parent div>div a:hover,.hot-parent>div>a+div>a+p>a:nth-child(1):hover{
     color: #e62318;
 }
+
 
 /*页面内所有商品块鼠标移入时的阴影和位移效果*/
 .list-1>div:hover,
@@ -319,6 +322,7 @@ div.hot-parent{
 .hot-parent>div{
     width:390px;height: 507px;
     box-sizing: border-box;
+    background: #f5f5f5;
 }
 /* 包裹img的a标签 */
 .hot-parent>div>a{
@@ -336,13 +340,13 @@ div.hot-parent{
 
 /* 下半部分文字部分 */
 /* 外层div */
-.hot-parent>div>div{
+.hot-parent>div>a+div{
     box-sizing: border-box;
     padding: 20px;
     position: relative;
-    background: #eee;
+    background: #f5f5f5;
 }
-/* 图标div */
+/* 三角图标div */
 .hot-parent>div>a+div>div{
     width: 0px;height: 0px;
     border:12px solid #eee;
@@ -373,3 +377,62 @@ div.hot-parent{
     transform: translateY(-2px);
     margin: 0 0 0 10px;
 }
+
+/*九张小图之123*/
+/*以下样式9张小图通用*/
+.left-small-img{
+    display: flex;
+    justify-content:center;
+    margin: 8px 0 0;
+    position: relative;
+    background: #f5f5f5;
+}
+.left-small-img>div>a{
+    display: inline-block;
+    width: 115px;height: 115px;
+    overflow: hidden;
+}
+/*390-395行代码后期可合并*/
+.left-small-img>div>a>img{
+    transition:all 0.3s linear;
+}
+.left-small-img>div>a:hover>img{
+    transform: scale(1.06);
+}
+/* 价格   span */
+.left-small-img>div>a+span{
+    display: block;
+    width: 115px;
+    color: #999;
+    font-size: 13px;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    transform: translateX(-2px);
+}
+
+
+/* 分 */
+/* 割 */
+/* 线 */
+
+/* 客厅 */
+div.drawing-room{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+div.drawing-room>div:first-child{
+    display: inline-block;
+    position: absolute;
+    left:0px;top:0px;
+    background: rgba(255,255,255,.8);
+    width: 225px;height: 300px;
+    box-sizing: border-box;
+}
+
+
+
+
+
