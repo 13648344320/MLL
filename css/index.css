@@ -419,20 +419,99 @@ div.hot-parent{
 /* 客厅 */
 div.drawing-room{
     width: 1200px;
-    margin: 0 auto;
+    margin:47px auto 0;
     overflow: hidden;
     position: relative;
 }
+/* 图片左上角的商品分类索引 */
 div.drawing-room>div:first-child{
     display: inline-block;
     position: absolute;
-    left:0px;top:0px;
-    background: rgba(255,255,255,.8);
+    left:50px;top:50px;
+    background: rgba(255,255,255,1);
     width: 225px;height: 300px;
     box-sizing: border-box;
+    z-index: 100;
+}
+/* “客厅”字体 */
+div.drawing-room>div>p:nth-child(1){
+    font-size: 40px;
+    text-align: center;
+    margin: 20px 0 0;
+}
+div.drawing-room>div>p:nth-child(2){
+    font-size: 12px;
+    text-align: center;
+}
+/*一大片a标签*/
+div.drawing-room>div>div{
+   
+    padding: 31px 15px 0 20px;
+    box-sizing: border-box;
+    
+}
+div.drawing-room>div>div>a{
+    display: inline-block;
+    width: 90px;height: 25px;
+    color: #333;
+    font-size: 14px;
+    background: #f5f5f5;
+    margin: 0 5px 5px 0;
+    text-align: center;
+    line-height: 25px;
+}
+/*    */
+/* 分 */
+/* 割 */
+/* 线 */
+/*  左上角的商品分类索引hover背景变红 字体变白  */
+div.drawing-room>div>div>a:hover{
+    background: #e62318;
+    color: #fff;
 }
 
+/*    */
+/* 分 */
+/* 割 */
+/* 线 */
+/*    */
 
+/*大图*/
+div.drawing-room>a.big-img{
+    display: block;
+    width: 1200px;height: 400px;
+    overflow: hidden;
+}
 
+/*后期可合并*/
+div.drawing-room>a.big-img>img{
+    transition:all 0.3s linear;
+}
+div.drawing-room>a.big-img>img:hover{
+    transform: scale(1.06);
+}
+/*后期可合并*/
+
+/*右下角的8个选项*/
+div.drawing-room>div>ul{
+    display: flex;
+    position: absolute;
+    bottom: 0px;right: 51px;
+}
+div.drawing-room>div>ul>li{
+    display: inline-block;
+    font-size: 14px;
+    color: #fff;
+    width: 90px;height: 34px;
+    text-align: center;
+    line-height:34px;
+    background: rgba(0,0,0,.5) 
+}
+/*鼠标移入的预案*/
+div.drawing-room>div>ul>li:hover{
+    background:rgba(255,255,255,.8);
+    color: #000;
+    cursor: pointer;
+}
 
 
