@@ -34,7 +34,7 @@ div.new-product>a:nth-child(2):hover,
 
 
 /*页面内所有商品块鼠标移入时的阴影和位移效果*/
-.list-1>div:hover,
+div.list-4-1>div:hover,
 .parent-3-2>div:hover{
     box-shadow: 0 5px 6px #aaa;
     transform: translate(0px 10px);
@@ -55,29 +55,29 @@ div.carousel{
     margin: 0 auto;
 }
 /* 4.1 */
-div.list-1{
+div.list-4-1{
     width: 1200px;
     margin: 30px auto 0;
     display: flex;
     justify-content: space-between;
 }
-.list-1>div{
+div.list-4-1>div{
     display: inline-block;
     position: relative;
 }
-.list-1>div:nth-child(1){
+div.list-4-1>div:nth-child(1){
     width: 393px;height: 300px;
     overflow: hidden;
 }
-.list-1>div:not(:nth-child(1)){
+div.list-4-1>div:not(:nth-child(1)){
     width: 259px;height: 300px;
     overflow: hidden;
 }
 /*后期可合并*/
-.list-1>div>img{
+div.list-4-1>div>img{
     transition:all 0.3s ease-out;
 }
-.list-1>div:hover>img{
+div.list-4-1>div:hover>img{
     transform: scale(1.06);
 }
 
@@ -111,13 +111,13 @@ div.list-1{
     display: block;
     padding: 5px 0 12px;
 }
-.list-1>div>.group-3{
+div.list-4-1>div>.group-3{
     position: absolute;
     z-index: 1;
     top:30px;left: 60px;
     text-align: center;
 }
-.list-1>div>.group-3>a:nth-child(1){
+div.carousel+div.list-4-1>div>.group-3>a:nth-child(1){
     display: block;
     color: #333;
     font-size: 22px;
@@ -125,7 +125,7 @@ div.list-1{
     margin: 0 0 3px;
 }
 /*四个第二个a标签的字体样式合到一处写*/
-.group>.group-son>a:nth-child(2),.list-1>div>.group-3>a:nth-child(2){
+.group>.group-son>a:nth-child(2),div.list-4-1>div>.group-3>a:nth-child(2){
     color: #666;
     font-size: 15px;
 }
@@ -444,13 +444,12 @@ div.drawing-room>div>p:nth-child(2){
     text-align: center;
 }
 /*一大片a标签*/
-div.drawing-room>div>div{
-   
+div.drawing-room>div:first-child>div{
     padding: 31px 15px 0 20px;
     box-sizing: border-box;
     
 }
-div.drawing-room>div>div>a{
+div.drawing-room>div>p+div>a{
     display: inline-block;
     width: 90px;height: 25px;
     color: #333;
@@ -465,7 +464,7 @@ div.drawing-room>div>div>a{
 /* 割 */
 /* 线 */
 /*  左上角的商品分类索引hover背景变红 字体变白  */
-div.drawing-room>div>div>a:hover{
+div.drawing-room>div>p+div>a:hover{
     background: #e62318;
     color: #fff;
 }
@@ -476,18 +475,34 @@ div.drawing-room>div>div>a:hover{
 /* 线 */
 /*    */
 
+
 /*大图*/
-div.drawing-room>a.big-img{
+#eight-pic{
+    width: 1200px;height: 400px;
+    margin: 0 auto;
+    position: relative;
+}
+#eight-pic>a{
+    position: absolute;
+    opacity: .1;
+}
+#eight-pic>a{
     display: block;
     width: 1200px;height: 400px;
     overflow: hidden;
 }
+/*大图的显示预案*/
+#eight-pic>a.shows{
+    opacity: 1;
+    z-index: 10;
+    transition:all .5s linear;
+}
 
 /*后期可合并*/
-div.drawing-room>a.big-img>img{
+div.drawing-room>#eight-pic>a>img{
     transition:all 0.3s linear;
 }
-div.drawing-room>a.big-img>img:hover{
+div.drawing-room>#eight-pic>a>img:hover{
     transform: scale(1.06);
 }
 /*后期可合并*/
@@ -496,7 +511,8 @@ div.drawing-room>a.big-img>img:hover{
 div.drawing-room>div>ul{
     display: flex;
     position: absolute;
-    bottom: 0px;right: 51px;
+    top: 366px;right: 51px;
+    z-index:11;
 }
 div.drawing-room>div>ul>li{
     display: inline-block;
@@ -507,11 +523,57 @@ div.drawing-room>div>ul>li{
     line-height:34px;
     background: rgba(0,0,0,.5) 
 }
-/*鼠标移入的预案*/
-div.drawing-room>div>ul>li:hover{
-    background:rgba(255,255,255,.8);
+/*鼠标移入ul的预案*/
+div.drawing-room>div>#li-8>li.btn{
+    background:#fff;
     color: #000;
     cursor: pointer;
 }
+/*下方随动的商品显示的样式预案*/
+    /*div#commodity>div获得shows属性*/
+#commodity>div.shows{
+    opacity: 1;
+    z-index: 10;
+    transition:all .5s linear;
+}
 
 
+
+/* 下方随动的商品 */
+#commodity{
+    width: 1200px;height: 305px;
+    margin: 20px auto 0;
+    
+    position: relative;
+}
+div#cmdt-list1{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    /* 为显示/隐藏做准备 */
+    position: absolute;
+    opacity: 0;
+}
+div#cmdt-list1>div{
+    position: relative;
+}
+div#cmdt-list1>div>a{
+    width: 285px;height: 285px;
+    overflow: hidden;
+    background: #fff;
+}
+/*图上的土黄色字体*/
+div#cmdt-list1>div>a+span{
+    display: inline-block;
+    position: absolute;
+    top: 10px;left: 10px;
+    color: #fff;
+    font-size: 13px;
+    height: 18px;
+    line-height: 18px;
+    padding: 0 5px;
+    border: 1px solid #ddb788;
+    background: #ddb788;
+    margin-right: 5px;
+    border-radius: 2px;
+}
