@@ -530,8 +530,9 @@ div.drawing-room>div>#li-8>li.btn{
     cursor: pointer;
 }
 /*下方随动的商品显示的样式预案*/
-    /*div#commodity>div获得shows属性*/
-#commodity>div.shows{
+    /*div#commodity1>div获得shows属性*/
+#commodity1>.content1.shows,
+#commodity1>.content2.shows,#commodity1>.content3.shows,#commodity1>.content4.shows,#commodity1>.content5.shows,#commodity1>.content6.shows,#commodity1>.content7.shows,#commodity1>.content8.shows{
     opacity: 1;
     z-index: 10;
     transition:all .5s linear;
@@ -540,13 +541,18 @@ div.drawing-room>div>#li-8>li.btn{
 
 
 /* 下方随动的商品 */
-#commodity{
+#commodity1{
     width: 1200px;height: 305px;
     margin: 20px auto 0;
-    
     position: relative;
 }
-div#cmdt-list1{
+div#commodity1>.content1,div#commodity1>.content2,
+div#commodity1>.content3,
+div#commodity1>.content4,
+div#commodity1>.content5,
+div#commodity1>.content6,
+div#commodity1>.content7,
+div#commodity1>.content8{
     width: 1200px;
     display: flex;
     justify-content: space-between;
@@ -554,16 +560,31 @@ div#cmdt-list1{
     position: absolute;
     opacity: 0;
 }
-div#cmdt-list1>div{
+div#commodity1>.content1>div,
+div#commodity1>.content2>div,
+div#commodity1>.content3>div,
+div#commodity1>.content4>div,
+div#commodity1>.content5>div,
+div#commodity1>.content6>div,
+div#commodity1>.content7>div,
+div#commodity1>.content8>div{
     position: relative;
 }
-div#cmdt-list1>div>a{
+div#commodity1>.content1>div>a,
+div#commodity1>.content2>div>a,
+div#commodity1>.content3>div>a,
+div#commodity1>.content4>div>a,
+div#commodity1>.content5>div>a,
+div#commodity1>.content6>div>a,
+div#commodity1>.content7>div>a,
+div#commodity1>.content8>div>a{
     width: 285px;height: 285px;
     overflow: hidden;
     background: #fff;
 }
 /*图上的土黄色字体*/
-div#cmdt-list1>div>a+span{
+div#commodity1>.content1>div>a+span,
+div#commodity1>.content2>div>a+span,div#commodity1>.content3>div>a+span,div#commodity1>.content4>div>a+span,div#commodity1>.content5>div>a+span,div#commodity1>.content6>div>a+span,div#commodity1>.content7>div>a+span,div#commodity1>.content8>div>a+span{
     display: inline-block;
     position: absolute;
     top: 10px;left: 10px;
