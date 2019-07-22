@@ -492,11 +492,11 @@ div.drawing-room>div>p+div>a:hover{
     overflow: hidden;
 }
 /*大图的显示预案*/
-#eight-pic>a.shows{
+/* #eight-pic>a.shows{
     opacity: 1;
     z-index: 10;
     transition:all .5s linear;
-}
+} */
 
 /*后期可合并*/
 div.drawing-room>#eight-pic>a>img{
@@ -523,7 +523,7 @@ div.drawing-room>div>ul>li{
     line-height:34px;
     background: rgba(0,0,0,.5) 
 }
-/*鼠标移入ul的预案*/
+/*鼠标移入ul>li*/
 div.drawing-room>div>#li-8>li.btn{
     background:#fff;
     color: #000;
@@ -531,8 +531,8 @@ div.drawing-room>div>#li-8>li.btn{
 }
 /*下方随动的商品显示的样式预案*/
     /*div#commodity1>div获得shows属性*/
-#commodity1>.content1.shows,
-#commodity1>.content2.shows,#commodity1>.content3.shows,#commodity1>.content4.shows,#commodity1>.content5.shows,#commodity1>.content6.shows,#commodity1>.content7.shows,#commodity1>.content8.shows{
+/*#commodity1>.content1.shows,
+#commodity1>.content2.shows,#commodity1>.content3.shows,#commodity1>.content4.shows,#commodity1>.content5.shows,#commodity1>.content6.shows,#commodity1>.content7.shows,#commodity1>.content8.shows,*/#commodity1>div:nth-child(n).shows,#eight-pic>a.shows{
     opacity: 1;
     z-index: 10;
     transition:all .5s linear;
@@ -546,13 +546,14 @@ div.drawing-room>div>#li-8>li.btn{
     margin: 20px auto 0;
     position: relative;
 }
-div#commodity1>.content1,div#commodity1>.content2,
+/*div#commodity1>.content1,div#commodity1>.content2,
 div#commodity1>.content3,
 div#commodity1>.content4,
 div#commodity1>.content5,
 div#commodity1>.content6,
 div#commodity1>.content7,
-div#commodity1>.content8{
+div#commodity1>.content8*/
+div#commodity1>div{
     width: 1200px;
     display: flex;
     justify-content: space-between;
@@ -560,31 +561,34 @@ div#commodity1>.content8{
     position: absolute;
     opacity: 0;
 }
-div#commodity1>.content1>div,
+/*div#commodity1>.content1>div,
 div#commodity1>.content2>div,
 div#commodity1>.content3>div,
 div#commodity1>.content4>div,
 div#commodity1>.content5>div,
 div#commodity1>.content6>div,
 div#commodity1>.content7>div,
-div#commodity1>.content8>div{
+div#commodity1>.content8>div*/
+div#commodity1>div>div{
     position: relative;
 }
-div#commodity1>.content1>div>a,
+/*div#commodity1>.content1>div>a,
 div#commodity1>.content2>div>a,
 div#commodity1>.content3>div>a,
 div#commodity1>.content4>div>a,
 div#commodity1>.content5>div>a,
 div#commodity1>.content6>div>a,
 div#commodity1>.content7>div>a,
-div#commodity1>.content8>div>a{
+div#commodity1>.content8>div>a*/
+div#commodity1>div>div>a{
     width: 285px;height: 285px;
     overflow: hidden;
     background: #fff;
 }
 /*图上的土黄色字体*/
-div#commodity1>.content1>div>a+span,
-div#commodity1>.content2>div>a+span,div#commodity1>.content3>div>a+span,div#commodity1>.content4>div>a+span,div#commodity1>.content5>div>a+span,div#commodity1>.content6>div>a+span,div#commodity1>.content7>div>a+span,div#commodity1>.content8>div>a+span{
+/* div#commodity1>.content1>div>a+span,
+div#commodity1>.content2>div>a+span,div#commodity1>.content3>div>a+span,div#commodity1>.content4>div>a+span,div#commodity1>.content5>div>a+span,div#commodity1>.content6>div>a+span,div#commodity1>.content7>div>a+span,div#commodity1>.content8>div>a+span*/
+div#commodity1>div>div>a+span{ 
     display: inline-block;
     position: absolute;
     top: 10px;left: 10px;
