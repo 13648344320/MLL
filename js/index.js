@@ -21,7 +21,6 @@ $(window).load(function(){
         //给自己加btn
         $li.addClass("btn");
         var $content=$li.attr("data-toggle");
-       
         var $sss=$(`.content${$content}`);
         $sss.siblings().removeClass("shows");
         $sss.addClass("shows")
