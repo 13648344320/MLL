@@ -1,5 +1,38 @@
 $(window).load(function(){
   
+var i=0;//关键变量
+var $lis=$("#li-8>li");//8个li的集合
+var $pics=$("#eight-pic>a");//8张大图的集合
+var $lists=$("#commodity1>div")//8个div的集合
+console.log($lis,$pics,$lists)
+function moveTo(to){
+    // 如果没有参数传入,则给当前位置的下一张图片添加class
+    if(to===undefined){
+        to=++i;
+        (to==8) && (to=0,i=0);
+        console.log($lis[to])
+        $lis[to].className="btn";
+        
+        $lis[to].siblings().removeClass("btn");
+    }else
+    if(to||to==0){
+        
+        (to===9)&&(to=0)
+        console.log(to)
+        
+    // 如果传入参数,就用这个参数当做下标去查找上面三个集合中对应下标的值
+    console.log($lis[i]);
+    $lis[i].className="btn";
+    to++;
+        
+    }
+}
+
+setInterval(function(){
+    moveTo();
+   
+},1000);
+
 
 
    /* $("ul#li-8>li").mouseenter(function(){
@@ -14,7 +47,7 @@ $(window).load(function(){
         $sss.siblings().removeClass("shows");
         $sss.addClass("shows")
     */
-    /*$("ul#li-8").on("mouseenter","[data-toggle]",function(){
+  /*  $("ul#li-8").on("mouseenter","[data-toggle]",function(){
         var $li=$(this);
         //清除别的btn
         $li.siblings().removeClass("btn");
@@ -26,7 +59,7 @@ $(window).load(function(){
         $sss.addClass("shows")
     })*/
 
-    // DOM版
+/*     // DOM版
     var i=0;
     var ul=document.querySelector("#li-8");
     ul.onmouseover=function(e){
@@ -85,5 +118,5 @@ $(window).load(function(){
         // 先将标识当前位置的变量i变为目标位置
         i=to;
         // 再用i来带着上下图片一起动
-    }
+    }*/
 })
