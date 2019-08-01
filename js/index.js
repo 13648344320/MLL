@@ -4,34 +4,68 @@ var i=0;//关键变量
 var $lis=$("#li-8>li");//8个li的集合
 var $pics=$("#eight-pic>a");//8张大图的集合
 var $lists=$("#commodity1>div")//8个div的集合
-console.log($lis,$pics,$lists)
+var no_and_off=true;  //开关
+// console.log($lis,$pics,$lists)
 function moveTo(to){
     // 如果没有参数传入,则给当前位置的下一张图片添加class
     if(to===undefined){
         to=++i;
         (to==8) && (to=0,i=0);
         console.log($lis[to])
-        $lis[to].className="btn";
-        
-        $lis[to].siblings().removeClass("btn");
-    }else
-    if(to||to==0){
-        
-        (to===9)&&(to=0)
+        // 通过下标从jQ集合中拿出来的是DOM元素，需要重新包装成jQ对象
+        $($lis[to]).addClass("btn");
+        $($lis[to]).siblings().removeClass("btn");
+        $($pics[to]).addClass("shows");
+        $($pics[to]).siblings().removeClass("shows");
+        $($lists[to]).addClass("shows");
+        $($lists[to]).siblings().removeClass("shows");
+
+
+    }else if(to||to==0){
         console.log(to)
-        
     // 如果传入参数,就用这个参数当做下标去查找上面三个集合中对应下标的值
     console.log($lis[i]);
-    $lis[i].className="btn";
-    to++;
-        
+    $($lis[to]).addClass("btn");
+        $($lis[to]).siblings().removeClass("btn");
+        $($pics[to]).addClass("shows");
+        $($pics[to]).siblings().removeClass("shows");
+        $($lists[to]).addClass("shows");
+        $($lists[to]).siblings().removeClass("shows");
+     
     }
 }
 
-setInterval(function(){
+var timer=setInterval(function(){
+    if(no_and_off){
     moveTo();
-   
-},1000);
+    }
+},3000);
+
+
+// 事件委托
+$("ul#li-8").on("mouseenter","[data-toggle]",function(){
+    var $li=$(this);
+    
+    clearInterval(timer);
+    console.log(timer);
+    timer=null;
+      
+    var $li_id=$li.attr("data-toggle");
+    to=$li_id;
+    moveTo(to);
+    
+})
+// 移出
+$("ul#li-8").on("mouseout","[data-toggle]",function(){
+    var $li=$(this);
+    var $li_id=$li.attr("data-toggle");
+    i=$li_id;
+    window.timer=setInterval(function(){
+        if(no_and_off){
+        moveTo();
+        }
+    },3000);
+})    
 
 
 
