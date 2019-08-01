@@ -11,7 +11,7 @@ function moveTo(to){
     if(to===undefined){
         to=++i;
         (to==8) && (to=0,i=0);
-        console.log($lis[to])
+        
         // 通过下标从jQ集合中拿出来的是DOM元素，需要重新包装成jQ对象
         $($lis[to]).addClass("btn");
         $($lis[to]).siblings().removeClass("btn");
@@ -22,9 +22,8 @@ function moveTo(to){
 
 
     }else if(to||to==0){
-        console.log(to)
+        
     // 如果传入参数,就用这个参数当做下标去查找上面三个集合中对应下标的值
-    console.log($lis[i]);
     $($lis[to]).addClass("btn");
         $($lis[to]).siblings().removeClass("btn");
         $($pics[to]).addClass("shows");
@@ -35,36 +34,31 @@ function moveTo(to){
     }
 }
 
-var timer=setInterval(function(){
-    if(no_and_off){
-    moveTo();
-    }
+var timer=setInterval(()=>{
+     moveTo();
 },3000);
-
 
 // 事件委托
 $("ul#li-8").on("mouseenter","[data-toggle]",function(){
     var $li=$(this);
-    
-    clearInterval(timer);
-    console.log(timer);
-    timer=null;
-      
     var $li_id=$li.attr("data-toggle");
     to=$li_id;
     moveTo(to);
-    
+    clearTimeout(timer);
+    timer=null;
 })
 // 移出
-$("ul#li-8").on("mouseout","[data-toggle]",function(){
+$("ul#li-8").on("mouseleave","[data-toggle]",function(){
     var $li=$(this);
     var $li_id=$li.attr("data-toggle");
+    //将全局的i变为当前i的自定义属性值:也就是i的下标
     i=$li_id;
-    window.timer=setInterval(function(){
-        if(no_and_off){
+    //moveTo(i);
+    console.log(i)
+    //再次调用timer时,i已变为现在拥有btn的li的下标,再以undefined的形式传入moveTo,自动跳至下一张
+    timer=setInterval(function(){
         moveTo();
-        }
-    },3000);
+   },3000);
 })    
 
 
