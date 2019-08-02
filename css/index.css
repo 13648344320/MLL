@@ -75,7 +75,7 @@ div.list-4-1>div:not(:nth-child(1)){
 }
 /*后期可合并*/
 div.list-4-1>div>img{
-    transition:all 0.3s ease-out;
+    transition:all 0.3s ease-in-out;
 }
 div.list-4-1>div:hover>img{
     transform: scale(1.06);
@@ -173,7 +173,7 @@ div.new-product>a:nth-child(2)>i{
     position: relative;
 }
 .parent-3-2>div>img{
-    transition:all 0.3s linear;
+    transition:all 0.3s ease-in-out;
 }
 .parent-3-2>div:hover>img{
     transform: scale(1.06);
@@ -299,7 +299,7 @@ div.right-div>a>div>p:not(:nth-child(1)){
 div.recommend-3>div:nth-child(1) img,
 div.recommend-3>div:nth-child(2) img,
 .right-div>a>img{
-    transition:all 0.3s linear;
+    transition:all 0.3s ease-in-out;
 }
 div.recommend-3>div:nth-child(1):hover img,
 div.recommend-3>div:nth-child(2):hover img,
@@ -332,7 +332,7 @@ div.hot-parent{
 }
 /*a标签里的img*/
 .hot-parent>div>a>img{
-    transition:all 0.3s linear;
+    transition:all 0.3s ease-in-out;
 }
 .hot-parent>div>a:hover>img{
     transform: scale(1.06);
@@ -394,7 +394,7 @@ div.hot-parent{
 }
 /*390-395行代码后期可合并*/
 .left-small-img>div>a>img{
-    transition:all 0.3s linear;
+    transition:all 0.3s ease-in-out;
 }
 .left-small-img>div>a:hover>img{
     transform: scale(1.06);
@@ -495,12 +495,12 @@ div.drawing-room>div>p+div>a:hover{
 /* #eight-pic>a.shows{
     opacity: 1;
     z-index: 10;
-    transition:all .5s linear;
+    transition:all .5s ease-in-out;
 } */
 
 /*后期可合并*/
 div.drawing-room>#eight-pic>a>img{
-    transition:all 0.3s linear;
+    transition:all 0.3s ease-in-out;
 }
 div.drawing-room>#eight-pic>a>img:hover{
     transform: scale(1.06);
@@ -530,12 +530,13 @@ div.drawing-room>div>#li-8>li.btn{
     cursor: pointer;
 }
 /*下方随动的商品显示的样式预案*/
-    /*div#commodity1>div获得shows属性*/
-/*#commodity1>.content1.shows,
-#commodity1>.content2.shows,#commodity1>.content3.shows,#commodity1>.content4.shows,#commodity1>.content5.shows,#commodity1>.content6.shows,#commodity1>.content7.shows,#commodity1>.content8.shows,*/#commodity1>div:nth-child(n).shows,#eight-pic>a.shows{
+
+/* 大图和列表共用一个显示预案 */
+#commodity1>div:nth-child(n).shows,
+#eight-pic>a.shows{
     opacity: 1;
     z-index: 10;
-    transition:all .5s linear;
+    transition:all .5s ease-in-out;
 }
 
 
@@ -559,7 +560,7 @@ div#commodity1>div{
     justify-content: space-between;
     /* 为显示/隐藏做准备 */
     position: absolute;
-    opacity: 0;
+    opacity: 1;
 }
 /*div#commodity1>.content1>div,
 div#commodity1>.content2>div,
