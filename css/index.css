@@ -500,7 +500,7 @@ div.drawing-room>div>p+div>a:hover{
 
 /*后期可合并*/
 div.drawing-room>#eight-pic>a>img{
-    transition:all 0.3s ease-in-out;
+    transition:all .3s ease-in-out;
 }
 div.drawing-room>#eight-pic>a>img:hover{
     transform: scale(1.06);
@@ -536,6 +536,7 @@ div.drawing-room>div>#li-8>li.btn{
 #eight-pic>a.shows{
     opacity: 1;
     z-index: 10;
+    background: #fff;
     transition:all .5s ease-in-out;
 }
 
@@ -547,48 +548,28 @@ div.drawing-room>div>#li-8>li.btn{
     margin: 20px auto 0;
     position: relative;
 }
-/*div#commodity1>.content1,div#commodity1>.content2,
-div#commodity1>.content3,
-div#commodity1>.content4,
-div#commodity1>.content5,
-div#commodity1>.content6,
-div#commodity1>.content7,
-div#commodity1>.content8*/
+
 div#commodity1>div{
     width: 1200px;
     display: flex;
     justify-content: space-between;
     /* 为显示/隐藏做准备 */
     position: absolute;
-    opacity: 1;
+    opacity: .3;
 }
-/*div#commodity1>.content1>div,
-div#commodity1>.content2>div,
-div#commodity1>.content3>div,
-div#commodity1>.content4>div,
-div#commodity1>.content5>div,
-div#commodity1>.content6>div,
-div#commodity1>.content7>div,
-div#commodity1>.content8>div*/
+
 div#commodity1>div>div{
+    width: 285px;height: 350px;
+    box-sizing: border-box;
     position: relative;
 }
-/*div#commodity1>.content1>div>a,
-div#commodity1>.content2>div>a,
-div#commodity1>.content3>div>a,
-div#commodity1>.content4>div>a,
-div#commodity1>.content5>div>a,
-div#commodity1>.content6>div>a,
-div#commodity1>.content7>div>a,
-div#commodity1>.content8>div>a*/
+/* 列表中的图片 */
 div#commodity1>div>div>a{
     width: 285px;height: 285px;
     overflow: hidden;
     background: #fff;
 }
 /*图上的土黄色字体*/
-/* div#commodity1>.content1>div>a+span,
-div#commodity1>.content2>div>a+span,div#commodity1>.content3>div>a+span,div#commodity1>.content4>div>a+span,div#commodity1>.content5>div>a+span,div#commodity1>.content6>div>a+span,div#commodity1>.content7>div>a+span,div#commodity1>.content8>div>a+span*/
 div#commodity1>div>div>a+span{ 
     display: inline-block;
     position: absolute;
@@ -602,4 +583,290 @@ div#commodity1>div>div>a+span{
     background: #ddb788;
     margin-right: 5px;
     border-radius: 2px;
+}
+/* 商品名称 */
+div#commodity1>div>div>p{
+    text-align: center;
+    font-size: 14px;
+}
+/* 价格 */
+div#commodity1>div>div>p.small-title{
+    color: #333;
+}
+div#commodity1>div>div>p.small-title:hover{
+    cursor: pointer;
+    color: #e62318;
+}
+div#commodity1>div>div>p.title-down-price{
+    color: #e62318;
+}
+
+
+
+
+
+/* 展示用样式 */
+#commodity2,#commodity3,#commodity4,#commodity5,
+#commodity6,#commodity7,#commodity8{
+    width: 1200px;
+    margin: 92px auto ;
+   
+}
+/* 区域 上 */
+#commodity2>.top,#commodity3>.top,
+#commodity4>.top,#commodity5>.top,
+#commodity6>.top,#commodity7>.top,
+#commodity8>.top{
+    position: relative;
+}
+/* 图片左上角的商品分类索引 */
+#commodity2>.top>div:nth-child(1),
+#commodity3>.top>div:nth-child(1),
+#commodity4>.top>div:nth-child(1),
+#commodity5>.top>div:nth-child(1),
+#commodity6>.top>div:nth-child(1),
+#commodity7>.top>div:nth-child(1),
+#commodity8>.top>div:nth-child(1){
+    display: inline-block;
+    position: absolute;
+    left:50px;top:50px;
+    background: rgba(255,255,255,1);
+    width: 225px;height: 300px;
+    box-sizing: border-box;
+    z-index: 100;
+}
+/* "卧室" 两个字 */
+#commodity2>.top>div>p:nth-child(1),
+#commodity3>.top>div>p:nth-child(1),
+#commodity4>.top>div>p:nth-child(1),
+#commodity5>.top>div>p:nth-child(1),
+#commodity6>.top>div>p:nth-child(1),
+#commodity7>.top>div>p:nth-child(1),
+#commodity8>.top>div>p:nth-child(1){
+    font-size: 40px;
+    text-align: center;
+    margin: 20px 0 0;
+}
+/* 卧室下边的英文 */
+#commodity2>.top>div>p:nth-child(2),
+#commodity3>.top>div>p:nth-child(2),
+#commodity4>.top>div>p:nth-child(2),
+#commodity5>.top>div>p:nth-child(2),
+#commodity6>.top>div>p:nth-child(2),
+#commodity7>.top>div>p:nth-child(2),
+#commodity8>.top>div>p:nth-child(2){
+    font-size: 12px;
+    text-align: center;
+}
+/* 一大片a标签外面的div */
+#commodity2>.top>div>div,
+#commodity3>.top>div>div,
+#commodity4>.top>div>div,
+#commodity5>.top>div>div,
+#commodity6>.top>div>div,
+#commodity7>.top>div>div,
+#commodity8>.top>div>div{
+    padding: 31px 15px 0 20px;
+    box-sizing: border-box;
+}
+/* 一大片a标签 */
+#commodity2>.top>div>div>a,
+#commodity3>.top>div>div>a,
+#commodity4>.top>div>div>a,
+#commodity5>.top>div>div>a,
+#commodity6>.top>div>div>a,
+#commodity7>.top>div>div>a,
+#commodity8>.top>div>div>a{
+    display: inline-block;
+    width: 90px;height: 25px;
+    color: #333;
+    font-size: 14px;
+    background: #f5f5f5;
+    margin: 0 5px 5px 0;
+    text-align: center;
+    line-height: 25px;
+}
+/* a标签的houver */
+#commodity2>.top>div>div>a:hover,
+#commodity3>.top>div>div>a:hover,
+#commodity4>.top>div>div>a:hover,
+#commodity5>.top>div>div>a:hover,
+#commodity6>.top>div>div>a:hover,
+#commodity7>.top>div>div>a:hover,
+#commodity8>.top>div>div>a:hover{
+    background: #e62318;
+    color: #fff;
+}
+/* 大图 */
+#commodity2>.top>div:nth-child(2),
+#commodity3>.top>div:nth-child(2),
+#commodity4>.top>div:nth-child(2),
+#commodity5>.top>div:nth-child(2),
+#commodity6>.top>div:nth-child(2),
+#commodity7>.top>div:nth-child(2),
+#commodity8>.top>div:nth-child(2){
+    width: 1200px;height: 400px;
+    overflow: hidden;
+}
+
+/* 后面几个分类都合并在这里  卧室,餐厅,书房,儿童房,办公家具,建材家饰,家居家饰 */
+#commodity2>.top>div:nth-child(2) img,
+#commodity3>.top>div:nth-child(2) img,
+#commodity4>.top>div:nth-child(2) img,
+#commodity5>.top>div:nth-child(2) img,
+#commodity6>.top>div:nth-child(2) img,
+#commodity7>.top>div:nth-child(2) img,
+#commodity8>.top>div:nth-child(2) img{
+    transition:all .3s ease-in-out;
+}
+
+
+#commodity2>.top>div:nth-child(2) img:hover,
+#commodity3>.top>div:nth-child(2) img:hover,
+#commodity4>.top>div:nth-child(2) img:hover,
+#commodity5>.top>div:nth-child(2) img:hover,
+#commodity6>.top>div:nth-child(2) img:hover,
+#commodity7>.top>div:nth-child(2) img:hover,
+#commodity8>.top>div:nth-child(2) img:hover{
+    transform: scale(1.06);
+}
+/* 大图右下角的ul>li */
+#commodity2>.top>ul,
+#commodity3>.top>ul,
+#commodity4>.top>ul,
+#commodity5>.top>ul,
+#commodity6>.top>ul,
+#commodity7>.top>ul,
+#commodity8>.top>ul{
+    display: flex;
+    position: absolute;
+    top: 366px;right: 51px;
+    z-index:11;
+}
+#commodity2>.top>ul>li,
+#commodity3>.top>ul>li,
+#commodity4>.top>ul>li,
+#commodity5>.top>ul>li,
+#commodity6>.top>ul>li,
+#commodity7>.top>ul>li,
+#commodity8>.top>ul>li{
+    display: inline-block;
+    font-size: 14px;
+    color: #fff;
+    width: 90px;height: 34px;
+    text-align: center;
+    line-height:34px;
+    background: rgba(0,0,0,.5) 
+}
+/* 鼠标移入li */
+#commodity2>.top>ul>li:hover,
+#commodity3>.top>ul>li:hover,
+#commodity4>.top>ul>li:hover,
+#commodity5>.top>ul>li:hover,
+#commodity6>.top>ul>li:hover,
+#commodity7>.top>ul>li:hover,
+#commodity8>.top>ul>li:hover{
+    background:#fff;
+    color: #000;
+    cursor: pointer;
+}
+/* li预案 */
+#commodity2>.top>ul>li.shows,
+#commodity3>.top>ul>li.shows,
+#commodity4>.top>ul>li.shows,
+#commodity5>.top>ul>li.shows,
+#commodity6>.top>ul>li.shows,
+#commodity7>.top>ul>li.shows,
+#commodity8>.top>ul>li.shows{
+    background:#fff;
+    color: #000;
+    cursor: pointer;
+}
+
+
+/* 区域  下 */
+#commodity2>.down-1,
+#commodity3>.down-1,
+#commodity4>.down-1,
+#commodity5>.down-1,
+#commodity6>.down-1,
+#commodity7>.down-1,
+#commodity8>.down-1{
+    width: 1200px;height: 350px;
+    margin: 20px auto 0;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+#commodity2>.down-1>div,
+#commodity3>.down-1>div,
+#commodity4>.down-1>div,
+#commodity5>.down-1>div,
+#commodity6>.down-1>div,
+#commodity7>.down-1>div,
+#commodity8>.down-1>div{
+    position: relative;
+}
+/* 商品上的黄色字体 */
+#commodity2>.down-1>div>span,
+#commodity3>.down-1>div>span,
+#commodity4>.down-1>div>span,
+#commodity5>.down-1>div>span,
+#commodity6>.down-1>div>span,
+#commodity7>.down-1>div>span,
+#commodity8>.down-1>div>span{
+    display: inline-block;
+    position: absolute;
+    top: 10px;left: 10px;
+    color: #fff;
+    font-size: 13px;
+    height: 18px;
+    line-height: 18px;
+    padding: 0 5px;
+    border: 1px solid #ddb788;
+    background: #ddb788;
+    margin-right: 5px;
+    border-radius: 2px;
+}
+/* 商品名称和价格通用 */
+#commodity2>.down-1>div>p,
+#commodity3>.down-1>div>p,
+#commodity4>.down-1>div>p,
+#commodity5>.down-1>div>p,
+#commodity6>.down-1>div>p,
+#commodity7>.down-1>div>p,
+#commodity8>.down-1>div>p{
+    text-align: center;
+    font-size: 14px;
+}
+/* 商品名称 */
+#commodity2>.down-1>div>.small-title,
+#commodity3>.down-1>div>.small-title,
+#commodity4>.down-1>div>.small-title,
+#commodity5>.down-1>div>.small-title,
+#commodity6>.down-1>div>.small-title,
+#commodity7>.down-1>div>.small-title,
+#commodity8>.down-1>div>.small-title{
+    color: #333;
+}
+/* 鼠标移入商品名称 */
+#commodity2>.down-1>div>.small-title:hover,
+#commodity3>.down-1>div>.small-title:hover,
+#commodity4>.down-1>div>.small-title:hover,
+#commodity5>.down-1>div>.small-title:hover,
+#commodity6>.down-1>div>.small-title:hover,
+#commodity7>.down-1>div>.small-title:hover,
+#commodity8>.down-1>div>.small-title:hover{
+    color: #e62318;
+    cursor: pointer;
+}
+/* 价格 */
+#commodity2>.down-1>div>p.title-down-price,
+#commodity3>.down-1>div>p.title-down-price,
+#commodity4>.down-1>div>p.title-down-price,
+#commodity5>.down-1>div>p.title-down-price,
+#commodity6>.down-1>div>p.title-down-price,
+#commodity7>.down-1>div>p.title-down-price,
+#commodity8>.down-1>div>p.title-down-price{
+    color: #e62318;
 }
