@@ -28,7 +28,9 @@ a{
 /*1.新品首发下的更多新品*/
 div.new-product>a:nth-child(2):hover,
 /*热销套系中间的字*/
-.hot-parent div>div a:hover,.hot-parent>div>a+div>a+p>a:nth-child(1):hover{
+.hot-parent div>div a:hover,.hot-parent>div>a+div>a+p>a:nth-child(1):hover,
+/* 轮播图上的导航条中的字体 */
+#caousel-nav>ul>li>a:hover{
     color: #e62318;
 }
 
@@ -46,7 +48,11 @@ div.list-4-1>div:hover,
 /* 分 */
 /* 割 */
 /* 线 */
+#caousel-division{
+    position: relative;
+}
 
+/* 轮播图 */
 div.carousel{
     background: #f1b778;
 }
@@ -54,6 +60,59 @@ div.carousel{
     width: 1200px;
     margin: 0 auto;
 }
+
+/* 轮播图上的导航条 */
+#caousel-nav{
+    width: 200px;height: 463px;
+    position: absolute;
+    top:0;left:200px;
+    background: rgba(0,0,0,.8);
+    padding: 9px 0 17px;
+    box-sizing: border-box;
+}
+#caousel-nav>ul{
+    list-style: none;
+    color: #fff;
+    cursor:pointer;
+}
+#caousel-nav>ul>li{
+    height: 31px;
+    padding: 0 0 0 15px;
+}
+#caousel-nav>ul>li>a{
+    color: #fff;
+    font-size: 13px;
+    line-height: 31px;
+}
+#caousel-nav>ul>li.tit>a{
+    font-size: 14px;
+}
+#caousel-nav>ul>li:nth-child(1)>i{
+    display: inline-block;
+    width: 20px;height: 20px;
+    background:url("../imgs/index/导航条图片.png") -57px -46px;
+    margin: 0 10px -2px 0;
+}
+#caousel-nav>ul>li:nth-child(8)>i{
+    display: inline-block;
+    width: 20px;height: 20px;
+    background:url("../imgs/index/导航条图片.png") -57px -83px;
+    margin: 0 10px -3px 0;
+}
+#caousel-nav>ul>li:nth-child(11)>i{
+    display: inline-block;
+    width: 20px;height: 20px;
+    background:url("../imgs/index/导航条图片.png") -55px 77px;
+    margin: 0 10px -5px 0;
+}
+/* 11个li都得单独写... */
+#caousel-nav>ul>li:nth-child(1):hover{
+    transform: translate(5px);
+    color: #333;
+    background: url("../imgs/index/导航条图片.png") -99px -46px;
+    background: #ccc;
+}
+
 /* 4.1 */
 div.list-4-1{
     width: 1200px;
@@ -417,14 +476,14 @@ div.hot-parent{
 /* 线 */
 
 /* 客厅 */
-div.drawing-room{
+#drawing-room{
     width: 1200px;
     margin:47px auto 0;
     overflow: hidden;
     position: relative;
 }
 /* 图片左上角的商品分类索引 */
-div.drawing-room>div:first-child{
+#drawing-room>div:first-child{
     display: inline-block;
     position: absolute;
     left:50px;top:50px;
@@ -434,22 +493,22 @@ div.drawing-room>div:first-child{
     z-index: 100;
 }
 /* “客厅”字体 */
-div.drawing-room>div>p:nth-child(1){
+#drawing-room>div>p:nth-child(1){
     font-size: 40px;
     text-align: center;
     margin: 20px 0 0;
 }
-div.drawing-room>div>p:nth-child(2){
+#drawing-room>div>p:nth-child(2){
     font-size: 12px;
     text-align: center;
 }
 /*一大片a标签*/
-div.drawing-room>div:first-child>div{
+#drawing-room>div:first-child>div{
     padding: 31px 15px 0 20px;
     box-sizing: border-box;
     
 }
-div.drawing-room>div>p+div>a{
+#drawing-room>div>p+div>a{
     display: inline-block;
     width: 90px;height: 25px;
     color: #333;
@@ -464,7 +523,7 @@ div.drawing-room>div>p+div>a{
 /* 割 */
 /* 线 */
 /*  左上角的商品分类索引hover背景变红 字体变白  */
-div.drawing-room>div>p+div>a:hover{
+#drawing-room>div>p+div>a:hover{
     background: #e62318;
     color: #fff;
 }
@@ -499,22 +558,22 @@ div.drawing-room>div>p+div>a:hover{
 } */
 
 /*后期可合并*/
-div.drawing-room>#eight-pic>a>img{
+#drawing-room>#eight-pic>a>img{
     transition:all .3s ease-in-out;
 }
-div.drawing-room>#eight-pic>a>img:hover{
+#drawing-room>#eight-pic>a>img:hover{
     transform: scale(1.06);
 }
 /*后期可合并*/
 
 /*右下角的8个选项*/
-div.drawing-room>div>ul{
+#drawing-room>div>ul{
     display: flex;
     position: absolute;
     top: 366px;right: 51px;
     z-index:11;
 }
-div.drawing-room>div>ul>li{
+#drawing-room>div>ul>li{
     display: inline-block;
     font-size: 14px;
     color: #fff;
@@ -523,8 +582,8 @@ div.drawing-room>div>ul>li{
     line-height:34px;
     background: rgba(0,0,0,.5) 
 }
-/*鼠标移入ul>li*/
-div.drawing-room>div>#li-8>li.btn{
+
+#drawing-room>div>#li-8>li.btn{
     background:#fff;
     color: #000;
     cursor: pointer;
