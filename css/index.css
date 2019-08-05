@@ -30,7 +30,7 @@ div.new-product>a:nth-child(2):hover,
 /*热销套系中间的字*/
 .hot-parent div>div a:hover,.hot-parent>div>a+div>a+p>a:nth-child(1):hover,
 /* 轮播图上的导航条中的字体 */
-#caousel-nav>ul>li>a:hover{
+#carousel-nav>ul>li>a:hover{
     color: #e62318;
 }
 
@@ -48,7 +48,7 @@ div.list-4-1>div:hover,
 /* 分 */
 /* 割 */
 /* 线 */
-#caousel-division{
+#carousel-division{
     position: relative;
 }
 
@@ -62,7 +62,7 @@ div.carousel{
 }
 
 /* 轮播图上的导航条 */
-#caousel-nav{
+#carousel-nav{
     width: 200px;height: 463px;
     position: absolute;
     top:0;left:200px;
@@ -70,47 +70,87 @@ div.carousel{
     padding: 9px 0 17px;
     box-sizing: border-box;
 }
-#caousel-nav>ul{
+#carousel-nav>ul{
     list-style: none;
     color: #fff;
     cursor:pointer;
 }
-#caousel-nav>ul>li{
+#carousel-nav>ul>li{
     height: 31px;
     padding: 0 0 0 15px;
 }
-#caousel-nav>ul>li>a{
+#carousel-nav>ul>li>a{
     color: #fff;
     font-size: 13px;
     line-height: 31px;
 }
-#caousel-nav>ul>li.tit>a{
+#carousel-nav>ul>li:nth-child(1)>a,
+#carousel-nav>ul>li:nth-child(8)>a,
+#carousel-nav>ul>li:nth-child(11)>a{
     font-size: 14px;
 }
-#caousel-nav>ul>li:nth-child(1)>i{
+#carousel-nav>ul>li:nth-child(1)>i{
     display: inline-block;
     width: 20px;height: 20px;
     background:url("../imgs/index/导航条图片.png") -57px -46px;
     margin: 0 10px -2px 0;
 }
-#caousel-nav>ul>li:nth-child(8)>i{
+#carousel-nav>ul>li:nth-child(8)>i{
     display: inline-block;
     width: 20px;height: 20px;
     background:url("../imgs/index/导航条图片.png") -57px -83px;
     margin: 0 10px -3px 0;
 }
-#caousel-nav>ul>li:nth-child(11)>i{
+#carousel-nav>ul>li:nth-child(11)>i{
     display: inline-block;
     width: 20px;height: 20px;
     background:url("../imgs/index/导航条图片.png") -55px 77px;
     margin: 0 10px -5px 0;
 }
-/* 11个li都得单独写... */
-#caousel-nav>ul>li:nth-child(1):hover{
-    transform: translate(5px);
-    color: #333;
+/* 11个li都单独写... */
+/* 第1个li的专属预案 */
+#carousel-nav>ul>li:nth-child(1).hover1{
+    padding:0 0 0 18px;
+    background: #ddd;
+}
+#carousel-nav>ul>li:nth-child(1)>i.hover1{
     background: url("../imgs/index/导航条图片.png") -99px -46px;
-    background: #ccc;
+    margin: 0 10px -3px 0;
+}
+#carousel-nav>ul>li:nth-child(1)>a.hover1{
+    color: #333;
+}
+/* 第8个li的专属预案 */
+#carousel-nav>ul>li:nth-child(8).hover8{
+    padding:0 0 0 18px;
+    background: #ddd;
+}
+#carousel-nav>ul>li:nth-child(8)>i.hover8{
+    background: url("../imgs/index/导航条图片.png") -99px -83px;
+    margin: 0 10px -2px 0;
+}
+#carousel-nav>ul>li:nth-child(8)>a.hover8{
+    color: #333;
+}
+/* 第11个li的专属预案 */
+#carousel-nav>ul>li:nth-child(11).hover11{
+    padding:0 0 0 18px;
+    background: #ddd;
+}
+#carousel-nav>ul>li:nth-child(11)>i.hover11{
+    background: url("../imgs/index/导航条图片.png") -94px -122px;
+    margin: 0 10px -2px 0;
+}
+#carousel-nav>ul>li:nth-child(11)>a.hover11{
+    color: #333;
+}
+/* 除去第1 8 11个li的公共预案 */
+#carousel-nav>ul>li.hover{
+    padding:0 0 0 20px;
+    background: #ddd;
+}
+#carousel-nav>ul>li>a.hover{
+    color: #333;
 }
 
 /* 4.1 */

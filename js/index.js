@@ -1,4 +1,38 @@
 $(window).load(function(){
+
+    
+(function(){// 轮播图上的导航条的js开始
+    // 找到触发事件的元素
+    var $ul=$("#carousel-nav>ul");
+    console.log($ul);
+    // 事件委托
+    $ul.on("mouseenter","li",function(){
+        var $li=$(this);
+        var $li_id=$li.attr("data-liId");
+        var $data1_i=$("[data-liId=1]>i");
+        var $data1_a=$("[data-liId=1]>a");
+        var $data8_i=$("[data-liId=8]>i");
+        var $data8_a=$("[data-liId=8]>a");
+        var $data11_i=$("[data-liId=11]>i");
+        var $data11_a=$("[data-liId=11]>a");
+        // 如果$li_id为undefined,说明移入的不是三个标题之一
+        if(!$li_id){
+            
+            $li.addClass("hover").siblings().removeClass("hover").removeClass("hover1").removeClass("hover8").removeClass("hover11");
+        }else if($li_id==1){
+            $li.addClass("hover1").siblings().removeClass("hover").removeClass("hover8").removeClass("hover11")
+        }else if($li_id==8){
+            $li.addClass("hover8").siblings().removeClass("hover1").removeClass("hover").removeClass("hover11")
+        }else if($li_id==11){
+            $li.addClass("hover11").siblings().removeClass("hover1").removeClass("hover").removeClass("hover8")
+        }
+    })
+
+
+})();// 轮播图上的导航条的js结束
+
+
+(function(){//大图,ul>li和随动的商品列表的js的开始
 var i=0;//关键变量
 var $lis=$("#li-8>li");//8个li的集合
 var $pics=$("#eight-pic>a");//8张大图的集合
@@ -51,7 +85,7 @@ $("ul#li-8").on("mouseleave","[data-toggle]",function(){
         moveTo();
    },3000);
 })  
-
+})();//大图,ul>li和随动的商品列表的js的结束
 
 
 
