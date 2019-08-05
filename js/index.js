@@ -9,6 +9,7 @@ $(window).load(function(){
     $ul.on("mouseenter","li",function(){
         var $li=$(this);
         var $li_id=$li.attr("data-liId");
+
         var $data1_i=$("[data-liId=1]>i");
         var $data1_a=$("[data-liId=1]>a");
         var $data8_i=$("[data-liId=8]>i");
@@ -17,18 +18,57 @@ $(window).load(function(){
         var $data11_a=$("[data-liId=11]>a");
         // 如果$li_id为undefined,说明移入的不是三个标题之一
         if(!$li_id){
-            
-            $li.addClass("hover").siblings().removeClass("hover").removeClass("hover1").removeClass("hover8").removeClass("hover11");
+            $li.addClass("hover");
+            $li.children().addClass("hover");
         }else if($li_id==1){
-            $li.addClass("hover1").siblings().removeClass("hover").removeClass("hover8").removeClass("hover11")
+            $li.addClass("hover1")
+            $data1_a.addClass("hover1");
+            $data1_i.addClass("hover1");
+            $li.children().addClass("hover1");
         }else if($li_id==8){
-            $li.addClass("hover8").siblings().removeClass("hover1").removeClass("hover").removeClass("hover11")
+            $li.addClass("hover8")
+            $data8_a.addClass("hover8");
+            $data8_i.addClass("hover8");
+            $li.children().addClass("hover8");
         }else if($li_id==11){
-            $li.addClass("hover11").siblings().removeClass("hover1").removeClass("hover").removeClass("hover8")
+            $li.addClass("hover11");
+            $data11_a.addClass("hover11");
+            $data11_i.addClass("hover11");
+            $li.children().addClass("hover11");
+        }
+    });
+
+    // 鼠标移出
+    $ul.on("mouseleave","li",function(){
+        var $li=$(this);
+        var $li_id=$li.attr("data-liId");
+
+        var $data1_i=$("[data-liId=1]>i");
+        var $data1_a=$("[data-liId=1]>a");
+        var $data8_i=$("[data-liId=8]>i");
+        var $data8_a=$("[data-liId=8]>a");
+        var $data11_i=$("[data-liId=11]>i");
+        var $data11_a=$("[data-liId=11]>a");
+        // 如果$li_id为undefined,说明移入的不是三个标题之一
+        if(!$li_id){
+            $li.removeClass("hover");
+            $li.children().removeClass("hover");
+        }else if($li_id==1){
+            $li.removeClass("hover1");$data1_i.removeClass("hover1");
+            $data1_a.removeClass("hover1");
+            $li.children().removeClass("hover1");
+        }else if($li_id==8){
+            $li.removeClass("hover8");$data8_i.removeClass("hover8");
+            $data8_a.removeClass("hover8");
+            $li.children().removeClass("hover8");
+        }else if($li_id==11){
+            $li.removeClass("hover11");$data11_i.removeClass("hover11");
+            $data11_a.removeClass("hover11");
+            $li.children().removeClass("hover11");
         }
     })
 
-
+    
 })();// 轮播图上的导航条的js结束
 
 

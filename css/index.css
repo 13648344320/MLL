@@ -72,7 +72,7 @@ div.carousel{
 }
 #carousel-nav>ul{
     list-style: none;
-    color: #fff;
+    color: #eee;
     cursor:pointer;
 }
 #carousel-nav>ul>li{
@@ -108,46 +108,40 @@ div.carousel{
     margin: 0 10px -5px 0;
 }
 /* 11个li都单独写... */
-/* 第1个li的专属预案 */
-#carousel-nav>ul>li:nth-child(1).hover1{
+
+#carousel-nav>ul>li:nth-child(1).hover1,
+#carousel-nav>ul>li:nth-child(8).hover8,
+#carousel-nav>ul>li:nth-child(11).hover11{
     padding:0 0 0 18px;
-    background: #ddd;
+    background: rgba(255,255,255,.9);
 }
+#carousel-nav>ul>li:nth-child(1)>a.hover1,
+#carousel-nav>ul>li:nth-child(8)>a.hover8,
+#carousel-nav>ul>li:nth-child(11)>a.hover11{
+    color: #333;
+}
+/* 第1个li的专属预案 */
 #carousel-nav>ul>li:nth-child(1)>i.hover1{
     background: url("../imgs/index/导航条图片.png") -99px -46px;
     margin: 0 10px -3px 0;
 }
-#carousel-nav>ul>li:nth-child(1)>a.hover1{
-    color: #333;
-}
+
 /* 第8个li的专属预案 */
-#carousel-nav>ul>li:nth-child(8).hover8{
-    padding:0 0 0 18px;
-    background: #ddd;
-}
 #carousel-nav>ul>li:nth-child(8)>i.hover8{
     background: url("../imgs/index/导航条图片.png") -99px -83px;
     margin: 0 10px -2px 0;
 }
-#carousel-nav>ul>li:nth-child(8)>a.hover8{
-    color: #333;
-}
 /* 第11个li的专属预案 */
-#carousel-nav>ul>li:nth-child(11).hover11{
-    padding:0 0 0 18px;
-    background: #ddd;
-}
+
 #carousel-nav>ul>li:nth-child(11)>i.hover11{
     background: url("../imgs/index/导航条图片.png") -94px -122px;
     margin: 0 10px -2px 0;
 }
-#carousel-nav>ul>li:nth-child(11)>a.hover11{
-    color: #333;
-}
 /* 除去第1 8 11个li的公共预案 */
 #carousel-nav>ul>li.hover{
     padding:0 0 0 20px;
-    background: #ddd;
+    background: rgba(255,255,255,.9);
+    color: #c8c8c8;
 }
 #carousel-nav>ul>li>a.hover{
     color: #333;
