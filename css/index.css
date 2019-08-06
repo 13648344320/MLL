@@ -48,24 +48,84 @@ div.list-4-1>div:hover,
 /* 分 */
 /* 割 */
 /* 线 */
-#carousel-division{
-    position: relative;
-}
+
 
 /* 轮播图 */
-div.carousel{
-    background: #f1b778;
+#carousel-division{
+    height: 460px;
+    background: #ddb788
 }
-.carousel .carousel-child{
+#carousel-division>.parent{
+    position: relative;
     width: 1200px;
     margin: 0 auto;
 }
 
+/* 轮播图右边的体验馆 */
+#Experience{
+    position: absolute;
+    width: 180px;
+    height: 360px;
+    right: 0;
+    top: 50px;
+    background: rgba(255,255,255,.9);
+    text-align: center;
+}
+/* 第一个a标签 */
+#Experience>a:nth-child(1){
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 0 3px;
+    margin: 30px 0 0;
+}
+/* 第二个a标签 */
+#Experience>a:nth-child(2){
+    display: block;
+    font-size: 14px;
+    padding: 0 0 3px;
+}
+/* 大的圆的精灵图 */
+#Experience>.son>a{
+    display: block;
+    width: 130px;
+    height: 130px;
+    margin: 30px auto 0;
+    background: url("../imgs/header/index.png") 0 -599px;
+}
+/* 椭圆的精灵图 */
+#Experience>a:nth-child(4){
+    position: absolute;
+    top: 231px;
+    left: 28px;
+    display: block;
+    width: 124px;
+    height: 32px;
+    background: url(../imgs/header/index.png) 0 -730px;
+}
+#Experience>a:nth-child(4):hover{
+    position: absolute;
+    top: 231px;
+    left: 28px;
+    display: block;
+    width: 124px;
+    height: 32px;
+    background: url(../imgs/header/index.png) 0 -763px;
+}
+#Experience>div:nth-child(5){
+    margin: 36px 0 0; 
+}
+#Experience>div>p{
+    color: #999;
+    font-size: 14px;
+}
+
+
 /* 轮播图上的导航条 */
 #carousel-nav{
-    width: 200px;height: 463px;
+    width: 200px;height: 460px;
     position: absolute;
-    top:0;left:200px;
+    top:0;left:0px;
     background: rgba(0,0,0,.8);
     padding: 9px 0 17px;
     box-sizing: border-box;
@@ -74,6 +134,7 @@ div.carousel{
     list-style: none;
     color: #eee;
     cursor:pointer;
+    position: relative;
 }
 #carousel-nav>ul>li{
     height: 31px;
@@ -120,6 +181,15 @@ div.carousel{
 #carousel-nav>ul>li:nth-child(11)>a.hover11{
     color: #333;
 }
+#carousel-nav>ul>li>div.hover,
+#carousel-nav>ul>li:nth-child(1)>div.hover1,
+#carousel-nav>ul>li:nth-child(8)>div.hover8,
+#carousel-nav>ul>li:nth-child(11)>div.hover11{
+    display: block;
+    top:-9px;left: 200px;
+    width: 941px;height: 460px;
+    background: rgba(255,255,255,.9);
+}
 /* 第1个li的专属预案 */
 #carousel-nav>ul>li:nth-child(1)>i.hover1{
     background: url("../imgs/index/导航条图片.png") -99px -46px;
@@ -145,6 +215,15 @@ div.carousel{
 }
 #carousel-nav>ul>li>a.hover{
     color: #333;
+}
+/* 右区域的14个div */
+#carousel-nav>ul>li>div{
+    display: none;
+    position: absolute;
+    top: -9px;left: 190px;
+    width: 941px;height: 460px;
+    transition: all .2s ease-in-out;
+    
 }
 
 /* 4.1 */
@@ -210,7 +289,7 @@ div.list-4-1>div>.group-3{
     top:30px;left: 60px;
     text-align: center;
 }
-div.carousel+div.list-4-1>div>.group-3>a:nth-child(1){
+.list-4-1>div>.group-3>a:nth-child(1){
     display: block;
     color: #333;
     font-size: 22px;

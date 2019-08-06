@@ -67,7 +67,6 @@ $(window).load(function(){
             $li.children().removeClass("hover11");
         }
     })
-
     
 })();// 轮播图上的导航条的js结束
 
