@@ -1,51 +1,51 @@
 /*通用样式*/
-a,span{
+#footer-end a,span{
     color: #777;
     text-decoration: none;
 }
-a:hover{
+#footer-end a:hover{
     color: #e62318;
 }
 /*背景颜色和高*/
-.parent{
+#footer-end{
     height: 91px;
     padding: 21px 0 30px;
     background: #1f1f1f;
 }
-.child{
+#footer-end .child{
     width: 1200px;height: 100%;
     display: flex;
     justify-content:space-between;
     margin: 24px auto 0;
 }
-.child-1,.child-2,.child-2>a{
+#footer-end .child-1,.child-2,.child-2>a{
     display: inline-block;
 }
-.child-2{
+#footer-end .child-2{
     padding: 10px 0 0;
 }
-.child-2 span{
+#footer-end .child-2 span{
     display: inline-block;
     width: 48px;
     vertical-align: middle;
 }
 /*精灵图*/
-a.c-2-a1{
+#footer-end a.c-2-a1{
     width: 27px;height: 22px;
     background: url("../imgs/foot/credit.png") 0px 0px;
     margin:0 0 -11px;
 }
-a.c-2-a2{
+#footer-end a.c-2-a2{
     width: 33px;height: 27px;
     background: url("../imgs/foot/credit.png") 0px 27px;
     margin:0 0 -11px;
 }
-a.c-2-a3{
+#footer-end a.c-2-a3{
     width: 24px;height: 23px;
     background: url("../imgs/foot/credit.png") 0px 49px;
     margin:0 0 -11px;
 }
-a.c-2-a4{
+#footer-end a.c-2-a4{
     width: 27px;height: 23px;
     background: url("../imgs/foot/credit.png") 0px -24px;
     margin:0 0 -11px;

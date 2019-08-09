@@ -1,9 +1,9 @@
 /* 公共样式：页面中的红色字体 */
-.text-red{
+#footer1 .text-red{
     color:#e62318;
 }
 /*精灵图*/
-.sprite-parent{
+#footer1 .sprite-parent{
     display: flex;
     justify-content: center;
     box-sizing: border-box;
@@ -11,56 +11,56 @@
     padding: 36px 0;
     border-bottom: 1px solid #ededed;
 }
-.sprite-parent a{
+#footer1 .sprite-parent a{
     display: inline-block;
     width:150px;height: 80px;
     box-sizing: border-box;
 }
 /*8个精灵图*/
-.sprite-parent a div{
+#footer1 .sprite-parent>a>div{
     width: 50px;height: 50px;
     margin: 0 auto;
 }
-.sprite-parent a{
+#footer1 .sprite-parent a{
     text-align: center;
     color: #000;
     font-size:14px;
     text-decoration: none; 
 }
-.sprite-parent a span{
+#footer1 .sprite-parent a span{
     display: block;
     margin: 10px 0 0;
 }
-.spa-d1{
+#footer1 .spa-d1{
     background: url("../imgs/foot/footerIcon.png") 0px 0px;
 }
-.spa-d2{
+#footer1 .spa-d2{
     background: url("../imgs/foot/footerIcon.png") -50px 0px;
 }
-.spa-d3{
+#footer1 .spa-d3{
     background: url("../imgs/foot/footerIcon.png") -100px 0px;
 }
-.spa-d4{
+#footer1 .spa-d4{
     background: url("../imgs/foot/footerIcon.png") -150px 0px;
 }
-.spa-d5{
+#footer1 .spa-d5{
     background: url("../imgs/foot/footerIcon.png") -0px -50px;
 }
-.spa-d6{
+#footer1 .spa-d6{
     background: url("../imgs/foot/footerIcon.png") -50px -50px;
 }
-.spa-d7{
+#footer1 .spa-d7{
     background: url("../imgs/foot/footerIcon.png") -100px -50px;
 }
-.spa-d8{
+#footer1 .spa-d8{
     background: url("../imgs/foot/footerIcon.png") -150px -50px;
 }
 /*footer-help*/
-.footer-help{
+#footer1 .footer-help{
     padding:35px 0 54px;
 }
 /*第二个div*/
-.footer-help-child{
+#footer1 .footer-help-child{
     width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -68,43 +68,43 @@
 }
 /* ul的中国地图 */
 
-#d1 ul{
+#footer1 #d1 ul{
     list-style: none;
     width: 200px;height: 150px;
     background: url("../imgs/foot/footer.png") 0px -100px;
     
 }
-.s1,.s2,.s3,.s4,.s5{
+#footer1 #d1 .s1,.s2,.s3,.s4,.s5{
     width: 240px;
 }
-.s1{
+#footer1 #d1 .s1{
     font-size: 14px;
 }
-.s2{
+#footer1 #d1 .s2{
     font-size: 20px;
     margin: 5px 0;
 }
-.s3{
+#footer1 #d1 .s3{
     margin:0 0 30px;
     color: #999;
     font-size: 12px;
 }
-.s4{
+#footer1 #d1 .s4{
     margin: 0 0 10px;
 }
-.s4-a1{
+#footer1 #d1 .s4-a1{
     display: inline-block;
     width: 12px;height: 15px;
     background: url("../imgs/foot/footer.png") -10px 18px;
     margin:0 -20px -2px 4px;
 }
-.s5-a1{
+#footer1 #d1 .s5-a1{
     display: inline-block;
     width: 11px;height: 15px;
     background: url("../imgs/foot/footer.png") 1px 20px;
     margin:0 -20px -2px 4px;
 }
-.s4-a2,.s5-a2{
+#footer1 #d1 .s4-a2,#footer1 #d1 .s5-a2{
     width: 118px;height: 26px;
     text-align: center;
     line-height: 26px;
@@ -116,7 +116,7 @@
     font-size: 12px;
 }
 /* 右边div的通用样式 */
-#d2 a{
+#footer1 #d2 a{
     display: block;
     text-decoration: none;
     color: #999;
@@ -125,34 +125,34 @@
     width: 151px;
     box-sizing: border-box;
 }
-#d2 a:hover{
+#footer1 #d2 a:hover{
     color: #e62318;
 }
-#d2 span{
+#footer1 #d2 span{
     display: block;
     color:#444;
     font-size: 14px;
     margin: 0 0 15px;
 }
  
-#d1,#d2,#d2 div{
+#footer1 #d1,#d2,#d2 div{
     display: inline-block
 }
-#d2{
+#footer1 #d2{
     width:851px;height: 256px;
     
 }
 
-#d2 div{
+#footer1 #d2 div{
     vertical-align:top;
 }
-.d2-last-child span,.d2-last-child a{
+#footer1 #d2 .d2-last-child span,.d2-last-child a{
     width:126px !important;
 }
-div span+img{
+#footer1 #d2 div span+img{
     display: inline-block;
     width:96px;
 }
-.d2-last-child+div>span{
+#footer1 #d2 .d2-last-child+div>span{
     margin: 86px 0 15px 4px !important;
 }

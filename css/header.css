@@ -17,15 +17,15 @@
     justify-content: space-between;
 }
 /*登录注册*/
-.ul_1,.ul_2{
+#d2 .ul_1,.ul_2{
     list-style: none;
     display: inline-flex;
 }
-.m-0{
-    margin:0 !important;
+#d2 .m-0{
+    margin:0 ;
 }
-.p-0{
-    padding: 0 !important;
+#d2 .p-0{
+    padding: 0 ;
 }
 .ul_1 li{
     display: inline-block;
