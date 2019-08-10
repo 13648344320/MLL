@@ -4,7 +4,6 @@ $(window).load(function(){
 (function(){// 轮播图上的导航条的js开始
     // 找到触发事件的元素
     var $ul=$("#carousel-nav>ul");
-    console.log($ul);
     // 事件委托
     $ul.on("mouseenter","li",function(){
         var $li=$(this);

@@ -1,5 +1,5 @@
 /*通用样式*/
-#footer-end a,span{
+#footer-end a,#footer-end span{
     color: #777;
     text-decoration: none;
 }
@@ -18,7 +18,8 @@
     justify-content:space-between;
     margin: 24px auto 0;
 }
-#footer-end .child-1,.child-2,.child-2>a{
+#footer-end .child-1,#footer-end .child-2,  
+#footer-end .child-2>a{
     display: inline-block;
 }
 #footer-end .child-2{
