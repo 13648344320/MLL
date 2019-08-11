@@ -1134,4 +1134,73 @@ div#commodity1>div>div>p.title-down-price{
 }
 
 
+/* 楼层索引 */
+#FS{
+    width: 40px;height: 480px;
+    position: fixed;
+    top: 150px;left: 80px;
+}
+#FS>div>a{
+    display: block;
+    width: 40px;height: 40px;
+    text-align: center;
+}
+/* 11个span的公共样式 */
+#FS>div>a>span{
+    display: inline-block;
+    width: 21px;height: 21px;
+    margin: 8px 0 0 0;
+    background-repeat: no-repeat;
+}
+/* 单独设置背景 */
+#FS>div>a:nth-child(1)>span{
+    background: url("../imgs/index/楼层索引17/1.png");
+}
+#FS>div>a:nth-child(2)>span{
+    background: url("../imgs/index/楼层索引17/2.png");
+}
+#FS>div>a:nth-child(3)>span{
+    background: url("../imgs/index/楼层索引17/3.png");
+}
+#FS>div>a:nth-child(4)>span{
+    background: url("../imgs/index/楼层索引17/4.png");
+}
+#FS>div>a:nth-child(5)>span{
+    background: url("../imgs/index/楼层索引17/5.png");
+}
+#FS>div>a:nth-child(6)>span{
+    background: url("../imgs/index/楼层索引17/6.png");
+}
+#FS>div>a:nth-child(7)>span{
+    background: url("../imgs/index/楼层索引17/7.png");
+}
+#FS>div>a:nth-child(8)>span{
+    background: url("../imgs/index/楼层索引17/8.png");
+}
+#FS>div>a:nth-child(9)>span{
+    background: url("../imgs/index/楼层索引17/9.png");
+}
+#FS>div>a:nth-child(10)>span{
+    background: url("../imgs/index/楼层索引17/10.png");
+}
+#FS>div>a:nth-child(11)>span{
+    background: url("../imgs/index/楼层索引17/11.png");
+}
 
+
+
+/* 设置span标签的预案 */
+#FS>div>a>span.sy{
+    display: inline-block;
+    width: 40px;height: 27.2px;;
+    margin:6px 0;
+    padding: 0 4px;
+    line-height: 13px;
+    box-sizing: border-box;
+    background: #e62318;
+    color: #fff;
+}
+/* a标签的预案 */
+#FS>div>a.ic{
+    background: #e62318;
+}

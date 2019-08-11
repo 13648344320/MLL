@@ -126,6 +126,31 @@ $("ul#li-8").on("mouseleave","[data-toggle]",function(){
 })();//大图,ul>li和随动的商品列表的js的结束
 
 
+(function(){  //首页左边的楼层索引  开始
+
+    // 先找几个需要的元素
+    var $as=$("#FS>div");
+    //当鼠标移入a标签时,用事件委托的方式来添加样式
+    $as.on("mouseenter","a",function(){
+        var $a=$(this);
+        console.log($a)
+        // $a[0] 拿到的是span标签,span标签是一个dom元素,要包装一下才能用
+        var $span=$a.children();
+        //先给当前a标签添加icon属性
+        $a.addClass("ic");
+        //再给里面的span标签添加sy属性
+        $span.addClass("sy").html("热销属性")
+    })
+    $as.on("mouseleave","a",function(){
+        var $a=$(this);
+        // $a[0] 拿到的是span标签,span标签是一个dom元素,要包装一下才能用
+        var $span=$a.children();
+        //先给当前a标签添加icon属性
+        $a.removeClass("ic");
+        //再给里面的span标签添加sy属性
+        $span.removeClass("sy").html("")
+    })
+})();//首页左边的楼层索引  结束
 
 
 })//最外层函数的结束括号
